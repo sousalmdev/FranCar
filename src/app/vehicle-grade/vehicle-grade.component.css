@@ -1,0 +1,159 @@
+
+section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  margin-top: 10rem;
+  padding: .5rem;
+  border: 2px solid rgb(255, 0, 0);
+  background-color: white;
+  border-radius: 4px;
+  width: 700px;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+   z-index: 0;
+  font-family: 'Poppins';
+  margin-bottom: 4rem;
+  place-items: center;
+}
+h2{
+font-weight: 600;
+font-size: 1rem;
+}
+h3{
+font-weight: 400;
+font-size: .8rem;
+}
+h1{
+  color: red;
+}
+img{
+  width: 200px;
+  filter: contrast(1.2);
+}
+.img-container{
+  background-color: white;
+}
+.pricing{
+  padding-left: 4rem;
+}
+.car-title{
+line-height: 1;
+display: flex;
+width: 30%;
+flex-direction: column;
+align-items: start;
+justify-content: start;
+padding-left: 4rem;
+
+}
+.strong-red{
+  color: red;
+  font-weight: 700;
+}
+button{
+padding: 8px 16px;
+margin: 1rem;
+background: rgb(71, 71, 71);
+box-shadow: 0px 2px 2px black;
+color: white;
+font-family: 'Poppins';
+border: none;
+border-radius: .4rem;
+transition: .3s ease;
+cursor: pointer;
+}
+button:hover{
+  background-color: red;
+}
+hr{
+  border-color: red;
+}
+@media only screen and (max-width:670px){
+  hr{
+    display: none;
+  }
+  main{
+    grid-template-columns: 1fr;
+  }
+  section{
+    max-width: 500px;
+    padding: 10px 20px;
+  }
+  img{
+    width: 150px;
+  }
+  h2{
+    font-size: .8rem;
+  }
+  h3{
+    font-size: .6rem;
+  }
+  h1{
+    font-size: 1rem;
+  }
+  button{
+    padding: 4px 8px;
+    width: 100px;
+  }
+  .car-title-not-price{
+    line-height: 1;
+    width: 100%;
+  }
+  .car-title{
+    line-height: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+}
+mat-paginator {
+  margin: 20px auto 0; /* 20px de margem acima, margem automática nas laterais para centralização horizontal, e 0 de margem abaixo */
+  width: fit-content;
+  background-color: red;
+  color: white;
+}
+@media only screen and (max-width:500px){
+  section{
+    width: 200px;
+    height: 350px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  img{
+    width: 180px;
+  }
+
+  button{
+    font-size: 14px;
+    padding-inline: 8px;
+  }
+  .car-title{
+    justify-content: center;
+    text-align: center;
+    padding-left:0 ;
+  }
+  .pricing{
+    padding-left: 0;
+  }
+  .car-title{
+    width: 100%;
+  }
+  .car-title h2{
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .car-title h3{
+    font-size: .8rem;
+  }
+
+}

@@ -1,0 +1,599 @@
+{
+  "carros": [
+    {
+      "foto": "https://www.webmotors.com.br/imagens/prod/348667/FORD_MUSTANG_5.0_V8_TIVCT_GASOLINA_MACH_1_SELECTSHIFT_34866711572092437.webp?s=fill&w=170&h=125&t=true",
+      "marca": "Ford",
+      "modelo": "Mustang",
+      "ano": 2023,
+      "cor": "Vermelho",
+      "preco": "R$ 315.000",
+      "motor": "V8 5.0L",
+      "ficha": "O Ford Mustang 2023 e um ícone americano com um motor V8 5.0L. Este carro esportivo oferece uma experiência de direcão emocionante e um desempenho excepcional."
+    },
+    {
+      "foto": "https://www.webmotors.com.br/imagens/prod/342247/CHEVROLET_CAMARO_6.2_V8_GASOLINA_SS_AUTOMATICO_34224712373075660.webp?s=fill&w=130&h=97&q=70&t=true)",
+      "marca": "Chevrolet",
+      "modelo": "Camaro",
+      "ano": 2022,
+      "cor": "Amarelo",
+      "preco": "R$ 290.000",
+      "motor": "V8 6.2L",
+      "ficha": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada."
+    },
+    {
+      "foto": "https://www.webmotors.com.br/imagens/prod/379444/TOYOTA_COROLLA_1.8_VVTI_HYBRID_FLEX_ALTIS_PREMIUM_CVT_37944414590233852.webp?s=fill&w=275&h=183&q=70&t=true",
+      "marca": "Toyota",
+      "modelo": "Corolla",
+      "ano": 2021,
+      "cor": "Prata",
+      "preco": "R$ 110.000",
+      "motor": "2.0L",
+      "ficha": "O Toyota Corolla 2021 oferece um motor 2.0L dinâmico, proporcionando uma conducão suave e eficiente."
+    },
+    {
+      "foto": "https://www.webmotors.com.br/imagens/prod/379390/HONDA_CIVIC_2.0_DI_VTEC_TURBO_GASOLINA_TYPE_R_MANUAL_37939015595031021.webp?s=fill&w=275&h=183&q=70&t=true",
+      "marca": "Honda",
+      "modelo": "Civic",
+      "ano": 2022,
+      "cor": "Azul",
+      "preco": "R$ 125.000",
+      "motor": "1.5L Turbo",
+      "ficha": "O Honda Civic 2022 vem equipado com um motor 1.5L Turbo, oferecendo uma experiência de direcão dinâmica."
+    },
+    {
+      "foto": "https://www.webmotors.com.br/imagens/prod/342523/CHEVROLET_CHEVELLE_7.4_SS_V8_GASOLINA_2P_AUTOMATICO_34252318170257298.webp?s=fill&w=165&h=110&q=70&t=true",
+      "marca": "Chevorlet",
+      "modelo": "Chevelle",
+      "ano": 1977,
+      "cor": "Azul",
+      "preco": "R$ 89.900",
+      "motor": "1.2L",
+      "ficha":
+      "Famoso pelo seu estilo clássico e desempenho confiável, o Chevelle 1977 1.2 é um ícone automotivo que conquistou o coração dos entusiastas. Reconhecido por sua silhueta distinta e durabilidade excepcional, o Chevelle 1977 1.2 continua a ser uma escolha popular entre os apaixonados por carros clássicos."
+    },
+    {
+      "foto": "https://www.webmotors.com.br/imagens/prod/349159/MITSUBISHI_LANCER_2.0_GT_ARMURA_16V_GASOLINA_4P_AUTOMATICO_34915919002168856.webp?s=fill&w=275&h=183&q=70&t=true",
+        "marca": "Mitsubishi",
+        "modelo": "Lancer GT",
+        "ano": 2013,
+        "cor": "Varia conforme a opção",
+        "preco": "R$ 68.000,00",
+        "motor": "2.0L",
+        "ficha": "O Mitsubishi Lancer GT 2013 é um exemplo de excelência automotiva, conhecido por seu desempenho ágil e estilo moderno. Com opções de cores variadas, este veículo oferece um motor potente que proporciona uma experiência de condução emocionante. Seu design dinâmico e recursos inovadores o tornam uma escolha popular entre os entusiastas de carros esportivos."
+
+    },
+    {
+      "foto": "https://renovainvest.com.br/wp-content/uploads/2023/11/shutterstock_2151924363-scaled.jpg",
+      "marca": "Ferrari",
+      "modelo": "250 GTO",
+      "ano": 1962,
+      "cor": "Vermelho",
+      "preco": "R$250.000.000",
+      "motor": "3.0L V12",
+      "ficha": "A Ferrari 250 GTO e uma lenda entre os carros clássicos, conhecida por sua beleza estonteante e desempenho excepcional nas pistas."
+    },
+    {
+      "foto": "https://www.webmotors.com.br/imagens/prod/348882/KIA_STONIC_1.0_TGDI_MHEV_SX_AUTOMATICO_34888211364353732.webp?s=fill&w=170&h=125&t=true",
+      "marca": "Kia",
+      "modelo": "Stonic",
+      "ano": 2024,
+      "cor": "Cinza",
+      "preco": "R$ 95.000",
+      "motor": "1.6L",
+      "ficha": "O Kia Stonic 2024 e um crossover compacto e ágil, ideal para a cidade."
+    },
+    {
+      "foto": "https://www.webmotors.com.br/imagens/prod/348265/MITSUBISHI_ECLIPSE_CROSS_1.5_MIVEC_TURBO_GASOLINA_GLS_CVT_34826518481332970.webp?s=fill&w=130&h=97&q=70&t=true)",
+      "marca": "Mitsubishi",
+      "modelo": "Eclipse Cross",
+      "ano": 2023,
+      "cor": "Vermelho",
+      "preco": "R$ 150.000",
+      "motor": "1.5L Turbo",
+      "ficha": "O Mitsubishi Eclipse Cross 2023 e um SUV que combina estilo e performance."
+    },
+    {
+      "foto": "https://www.webmotors.com.br/imagens/prod/348576/LAND_ROVER_DISCOVERY_SPORT_2.0_D200_TURBO_DIESEL_RDYNAMIC_SE_AUTOMATICO_34857611225171241.webp?s=fill&w=130&h=97&q=70&t=true)",
+      "marca": "Land Rover",
+      "modelo": "Discovery Sport",
+      "ano": 2024,
+      "cor": "Preto",
+      "preco": "R$ 250.000",
+      "motor": "2.0L Turbo",
+      "ficha": "O Land Rover Discovery Sport 2024 e um veículo robusto e luxuoso, perfeito para aventuras e uso diário."
+    },
+    {
+      "foto": "https://edgecast-img.yahoo.net/mysterio/api/C0D6C1DEF7A746F748253FC7C242EAA5CDF6A2BC557574ABF99F13DA44087BBF/autoblog/resizefill_w660_h372;quality_80;format_webp;cc_31536000;/https://s.aolcdn.com/commerce/autodata/images/USD10PRC011A021001.jpg",
+      "marca": "Porsche",
+      "modelo": "911 Turbo S",
+      "ano": 2024,
+      "cor": "Preto",
+      "preco": "R$ 1.300.000",
+      "motor": "3.8L",
+      "ficha": "O Porsche 911 Turbo S e um ícone do desempenho esportivo."
+    },
+    {
+      "foto": "https://media.zigcdn.com/media/model/2020/Jun/phantom-1_360x240.jpg",
+      "marca": "Rolls Royce",
+      "modelo": "Ghost",
+      "ano": 2024,
+      "cor": "Prata",
+      "preco": "R$ 1.750.000",
+      "motor": "V12",
+      "ficha": "O Rolls Royce Ghost e a definicão de luxo discreto e performance."
+    },
+    {
+      "foto": "https://ymimg1.b8cdn.com/resized/car_model/6826/pictures/6941227/mobile_listing_main_01.png",
+      "marca": "Bugatti",
+      "modelo": "Chiron",
+      "ano": 2024,
+      "cor": "Azul Carbono",
+      "preco": "R$ 12.500.000",
+      "motor": "W16",
+      "ficha": "O Bugatti Chiron define o ápice do luxo e da performance automotiva."
+    },
+    {
+      "foto": "https://crdms.images.consumerreports.org/c_lfill,w_480,q_auto,f_auto/prod/cars/cr/model-years/17493-2024-mercedes-benz-amg-gt",
+      "marca": "Mercedes-Benz",
+      "modelo": "AMG GT",
+      "ano": 2024,
+      "cor": "Prata Iridium",
+      "preco": "R$ 1.000.000",
+      "motor": "V8",
+      "ficha": "O Mercedes-AMG GT combina performance de corrida com o luxo da Mercedes-Benz."
+    },
+    {
+      "foto": "https://media.ed.edmunds-media.com/bmw/5-series/2024/oem/2024_bmw_5-series_sedan_530i-xdrive_fq_oem_1_1600.jpg",
+      "marca": "BMW",
+      "modelo": "Serie 5",
+      "ano": 2024,
+      "cor": "Cinza Metálico",
+      "preco": "R$ 450.000",
+      "motor": "3.0L",
+      "ficha": "O BMW Serie 5 e um sedã executivo que combina luxo e desempenho."
+    },
+    {
+      "foto": "https://images.dealer.com/ddc/vehicles/2024/Audi/A6/Sedan/trim_45_Progressiv_a5dd70/color/Ascari%20Blue%20Metallic-9W9W-21,36,58-640-en_CA.jpg",
+      "marca": "Audi",
+      "modelo": "A6",
+      "ano": 2024,
+      "cor": "Preto Brilhante",
+      "preco": "R$ 408.000",
+      "motor": "2.0L TFSI",
+      "ficha": "O Audi A6 e um sedã de luxo que oferece conforto e tecnologia de ponta."
+    },
+    {
+      "foto": "https://mosautoshina.ru/i/auto/jaguar_xe_2023.jpg",
+      "marca": "Jaguar",
+      "modelo": "XE",
+      "ano": 2024,
+      "cor": "Vermelho Radiante",
+      "preco": "R$ 250.000",
+      "motor": "2.0L Turbo",
+      "ficha": "O Jaguar XE e um sedã esportivo com um design arrojado e uma conducão dinâmica."
+    },
+    {
+      "foto": "https://cdn.jdpower.com/Models/640x480/2024-AlfaRomeo-Giulia-Ti.jpg",
+      "marca": "Alfa Romeo",
+      "modelo": "Giulia",
+      "ano": 2024,
+      "cor": "Azul Misano",
+      "preco": "R$ 275.000",
+      "motor": "2.0L Turbo",
+      "ficha": "O Alfa Romeo Giulia e um sedã que destaca a paixão italiana por carros."
+    },
+
+{
+  "foto": "https://www.webmotors.com.br/imagens/prod/348870/FIAT_PULSE_1.3_FLEX_DRIVE_CVT_34887016165177751.webp?s=fill&w=170&h=125&t=true",
+  "marca": "Fiat",
+  "modelo": "Pulse",
+  "ano": 2024,
+  "cor": "Branco",
+  "preco": "R$ 78.000",
+  "motor": "1.3L Flex",
+  "ficha": "O Fiat Pulse 2024 é um carro SUV compacto e econômico, perfeito para uso urbano."
+  }
+
+
+
+
+
+  ,
+    {
+      "foto": "https://www.webmotors.com.br/imagens/prod/379367/MINI_COOPER_2.0_16V_TWINPOWER_GASOLINA_JOHN_COOPER_WORKS_ZESTY_YELLOW_25K_EDITION_2P_STEPTRONIC_37936711534905834.webp?s=fill&w=130&h=97&q=70&t=true)",
+      "marca": "Mini",
+      "modelo": "Cooper",
+      "ano": 2024,
+      "cor": "Verde",
+      "preco": "R$ 110.000",
+      "motor": "1.5L",
+      "ficha": "O Mini Cooper 2024 combina estilo retrô com tecnologia moderna, proporcionando uma experiência de conducão divertida e ágil."
+    },
+    {
+      "foto": "https://www.webmotors.com.br/imagens/prod/349139/CITROEN_C3_1.6_16V_FLEX_FEEL_PACK_AT6_34913917052643673.webp",
+      "marca": "Citroen",
+      "modelo": "C3",
+      "ano": 2024,
+      "cor": "Amarelo",
+      "preco": "R$ 60.000",
+      "motor": "1.6L",
+      "ficha": "O Citroen C3 2024 e um hatch compacto com design arrojado e conforto interior, ideal para quem busca praticidade na cidade."
+    },
+    {
+      "foto": "https://p.turbosquid.com/ts-thumb/vE/XBp5er/pv/tesla_model_s_mk1f_plaid_2021_800_0001/jpg/1623752108/600x600/fit_q87/2961f438e6b993c6a5673bd46c306581d9a9292a/tesla_model_s_mk1f_plaid_2021_800_0001.jpg",
+      "marca": "Tesla",
+      "modelo": "Model S Plaid",
+      "ano": 2024,
+      "cor": "Branco Perola",
+      "preco": "R$ 900.000",
+      "motor": "Eletrico",
+      "ficha": "O Tesla Model S Plaid e um sedan eletrico de alto desempenho, capaz de acelerar de 0 a 100 km/h em menos de 2 segundos."
+    },
+    {
+      "foto": "https://www.ccarprice.com/products/AstonMartin_DBS_Superleggera_2024.jpg",
+      "marca": "Aston Martin",
+      "modelo": "DBS Superleggera",
+      "ano": 2024,
+      "cor": "Azul Metálico",
+      "preco": "R$ 2.000.000",
+      "motor": "V12",
+      "ficha": "O Aston Martin DBS Superleggera e um grand tourer de luxo, combinando elegância britânica com alto desempenho."
+    },
+    {
+      "foto": "https://cdn.carprices.ae/assets/api_uploads_img_car_2023_lamborghini_aventador_svj_lp770_4_roadster_5aa335654a.jpg",
+      "marca": "Lamborghini",
+      "modelo": "Aventador SVJ",
+      "ano": 2024,
+      "cor": "Verde Lime",
+      "preco": "R$ 5.000.000",
+      "motor": "V12",
+      "ficha": "O Lamborghini Aventador SVJ e um supercarro extremamente poderoso, conhecido por seu design arrojado e desempenho excepcional."
+    },
+    {
+      "foto": "https://delen.s3.ap-southeast-1.amazonaws.com/Mc_Laren_Orange_2bd37aad6d.jpg",
+      "marca": "McLaren",
+      "modelo": "720S",
+      "ano": 2024,
+      "cor": "Laranja Papaya",
+      "preco": "R$ 1.500.000",
+      "motor": "V8",
+      "ficha": "O McLaren 720S e um supercarro que oferece um equilíbrio perfeito entre desempenho na pista e conforto para o dia a dia."
+    },
+    {
+      "foto": "https://priceinsouthafrica.com/wp-content/uploads/2021/03/Bentley-Continental-GT-Speed-2022.png",
+      "marca": "Bentley",
+      "modelo": "Continental GT",
+      "ano": 2024,
+      "cor": "Vermelho Rubi",
+      "preco": "R$ 1.800.000",
+      "motor": "W12",
+      "ficha": "O Bentley Continental GT e um grand tourer de luxo que combina elegância, desempenho e tecnologia de ponta."
+    },
+    {
+      "foto": "https://www.timetunnelmodels.com/live/catalog/images/C4399.jpg",
+      "marca": "Pagani",
+      "modelo": "Huayra",
+      "ano": 2024,
+      "cor": "Amarelo Giallo",
+      "preco": "R$ 15.000.000",
+      "motor": "V12",
+      "ficha": "O Pagani Huayra e uma obra-prima da engenharia automotiva, combinando design exclusivo com desempenho incomparável."
+    },
+    {
+      "foto": "https://cdn.wheel-size.com/automobile/body/fisker-ocean-2022-2024-1692179219.6827674.jpg",
+      "marca": "Fisker",
+      "modelo": "Ocean",
+      "ano": 2024,
+      "cor": "Cinza Granito",
+      "preco": "R$ 400.000",
+      "motor": "Eletrico",
+      "ficha": "O Fisker Ocean e um SUV eletrico de luxo, projetado para combinar sustentabilidade com estilo e desempenho."
+    },
+    {
+      "foto": "https://www.lotuswny.com/staticmedia/Lotus/models/evija/img/image-evija.png",
+      "marca": "Lotus",
+      "modelo": "Evija",
+      "ano": 2024,
+      "cor": "Azul Escuro",
+      "preco": "R$ 10.000.000",
+      "motor": "Eletrico",
+      "ficha": "O Lotus Evija e um hypercarro eletrico de alto desempenho, projetado para oferecer uma experiência de conducão emocionante e exclusiva."
+    },
+    {
+      "foto": "https://modelkars.com/wp-content/uploads/gt880-rimac-nevera-orange-gts-models-49.webp",
+      "marca": "Rimac",
+      "modelo": "Nevera",
+      "ano": 2024,
+      "cor": "Prata Metálico",
+      "preco": "R$ 7.000.000",
+      "motor": "Eletrico",
+      "ficha": "O Rimac Nevera e um hypercarro eletrico que redefine os limites de desempenho, velocidade e tecnologia."
+    },
+    {
+      "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+      "marca": "Pininfarina",
+      "modelo": "Battista",
+      "ano": 2024,
+      "cor": "Branco Diamante",
+      "preco": "R$ 20.000.000",
+      "motor": "Eletrico",
+      "ficha": "O Pininfarina Battista e um hypercarro eletrico de edicão limitada, projetado para oferecer desempenho excepcional e design exclusivo."
+    },
+    {
+      "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+      "marca": "Lucid",
+      "modelo": "Air",
+      "ano": 2024,
+      "cor": "Vermelho Carmesim",
+      "preco": "R$ 1.200.000",
+      "motor": "Eletrico",
+      "ficha": "O Lucid Air e um sedan eletrico de luxo, que combina design aerodinâmico, conforto e desempenho de classe mundial."
+    },
+    {
+      "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+      "marca": "Polestar",
+      "modelo": "2",
+      "ano": 2024,
+      "cor": "Azul Índigo",
+      "preco": "R$ 600.000",
+      "motor": "Eletrico",
+      "ficha": "O Polestar 2 e um sedan eletrico premium, projetado para oferecer uma experiência de conducão dinâmica e conectada."
+    },
+    {
+      "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+      "marca": "NIO",
+      "modelo": "ES8",
+      "ano": 2024,
+      "cor": "Preto Ônix",
+      "preco": "R$ 800.000",
+      "motor": "Eletrico",
+      "ficha": "O NIO ES8 e um SUV eletrico de luxo, que oferece espaco, conforto e tecnologia avancada."
+    },
+    {
+      "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+      "marca": "Byton",
+      "modelo": "M-Byte",
+      "ano": 2024,
+      "cor": "Cinza Galáxia",
+      "preco": "R$ 500.000",
+      "motor": "Eletrico",
+      "ficha": "O Byton M-Byte e um SUV eletrico inteligente, projetado para proporcionar uma experiência de conducão conectada e confortável."
+    },
+    {
+      "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+      "marca": "Rivian",
+      "modelo": "R1T",
+      "ano": 2024,
+      "cor": "Verde Floresta",
+      "preco": "R$ 700.000",
+      "motor": "Eletrico",
+      "ficha": "O Rivian R1T e um pickup eletrico de luxo, projetado para aventuras off-road e uso diário com estilo."
+    },
+    {
+      "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+      "marca": "Canoo",
+      "modelo": "Lifestyle Vehicle",
+      "ano": 2024,
+      "cor": "Amarelo Solar",
+      "preco": "R$ 300.000",
+      "motor": "Eletrico",
+      "ficha": "O Canoo Lifestyle Vehicle e um veículo eletrico versátil, que combina espaco, conforto e tecnologia inovadora."
+    },
+    {
+      "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+      "marca": "Sony",
+      "modelo": "Vision-S",
+      "ano": 2024,
+      "cor": "Prata Lunar",
+      "preco": "R$ 2.500.000",
+      "motor": "Eletrico",
+      "ficha": "O Sony Vision-S e um sedan eletrico conceitual, que combina tecnologia avancada com design futurista."
+    },
+    {
+      "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+      "marca": "Hummer",
+      "modelo": "EV",
+      "ano": 2024,
+      "cor": "Cinza Granito",
+      "preco": "R$ 1.000.000",
+      "motor": "Eletrico",
+      "ficha": "O Hummer EV e um pickup eletrico de alto desempenho, projetado para aventuras off-road e uso urbano."
+    },
+    {
+      "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+      "marca": "Ferrari",
+      "modelo": "SF90 Stradale",
+      "ano": 2024,
+      "cor": "Vermelho Rosso Corsa",
+      "preco": "R$ 3.000.000",
+      "motor": "Híbrido",
+      "ficha": "O Ferrari SF90 Stradale e um supercarro híbrido que combina o melhor do desempenho tradicional da Ferrari com tecnologia de ponta."
+    },
+    {
+      "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+      "marca": "Nissan",
+      "modelo": "Altima",
+      "ano": 2024,
+      "cor": "Cinza",
+      "preco": "R$ 110.000",
+      "motor": "2.5L",
+      "ficha": "O Nissan Altima e um sedan espacoso e confortável, conhecido por sua confiabilidade e economia de combustível."
+    },
+    {
+      "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+      "marca": "Hyundai",
+      "modelo": "Santa Fe",
+      "ano": 2024,
+      "cor": "Branco",
+      "preco": "R$ 150.000",
+      "motor": "2.5L Turbo",
+      "ficha": "O Hyundai Santa Fe e um SUV versátil e familiar, com amplo espaco interno e tecnologia avancada."
+    },
+    {
+      "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+      "marca": "Subaru",
+      "modelo": "Outback",
+      "ano": 2024,
+      "cor": "Azul",
+      "preco": "R$ 140.000",
+      "motor": "2.4L Turbo",
+      "ficha": "O Subaru Outback combina a praticidade de uma perua com a capacidade off-road de um SUV, sendo ideal para aventuras ao ar livre."
+    },
+    {
+      "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+      "marca": "Mazda",
+      "modelo": "CX-5",
+      "ano": 2024,
+      "cor": "Vermelho",
+      "preco": "R$ 125.000",
+      "motor": "2.5L",
+      "ficha": "O Mazda CX-5 e um SUV elegante e refinado, oferecendo uma experiência de conducão suave e confortável."
+    },
+    {
+      "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+      "marca": "Jeep",
+      "modelo": "Wrangler",
+      "ano": 2024,
+      "cor": "Verde Militar",
+      "preco": "R$ 180.000",
+      "motor": "3.6L V6",
+      "ficha": "O Jeep Wrangler e um ícone off-road, conhecido por sua capacidade de enfrentar terrenos difíceis e sua personalizacão única."
+    },
+    {
+      "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+      "marca": "RAM",
+      "modelo": "1500",
+      "ano": 2024,
+      "cor": "Prata",
+      "preco": "R$ 220.000",
+      "motor": "5.7L HEMI V8",
+      "ficha": "A RAM 1500 e uma picape robusta e luxuosa, oferecendo conforto e desempenho tanto na estrada quanto fora dela."
+    },
+    {
+      "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+      "marca": "Chevrolet",
+      "modelo": "Tahoe",
+      "ano": 2024,
+      "cor": "Preto",
+      "preco": "R$ 200.000",
+      "motor": "6.2L V8",
+      "ficha": "O Chevrolet Tahoe e um SUV de tamanho grande, ideal para famílias grandes e para quem precisa de muito espaco de carga."
+    },
+    {
+      "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+      "marca": "GMC",
+      "modelo": "Yukon",
+      "ano": 2024,
+      "cor": "Azul",
+      "preco": "R$ 210.000",
+      "motor": "6.2L V8",
+      "ficha": "O GMC Yukon e um SUV de luxo, conhecido por seu interior espacoso, conforto e tecnologia avancada."
+    },
+    {
+      "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+      "marca": "Dodge",
+      "modelo": "Charger",
+      "ano": 2024,
+      "cor": "Laranja",
+      "preco": "R$ 190.000",
+      "motor": "6.4L HEMI V8",
+      "ficha": "O Dodge Charger e um sedan esportivo e potente, oferecendo um estilo agressivo e um desempenho emocionante."
+    },
+    {
+      "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+      "marca": "Lincoln",
+      "modelo": "Navigator",
+      "ano": 2024,
+      "cor": "Branco Perola",
+      "preco": "R$ 250.000",
+      "motor": "3.5L Twin-Turbo V6",
+      "ficha": "O Lincoln Navigator e um SUV de luxo, conhecido por seu conforto excepcional, tecnologia avancada e presenca imponente na estrada."
+    },
+    {
+      "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+      "marca": "Cadillac",
+      "modelo": "Escalade",
+      "ano": 2024,
+      "cor": "Cinza Metálico",
+      "preco": "R$ 240.000",
+      "motor": "6.2L V8",
+      "ficha": "O Cadillac Escalade e um dos SUVs de luxo mais icônicos, oferecendo um interior requintado e uma presenca imponente na estrada."
+    },
+    { "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+      "marca": "Acura",
+      "modelo": "MDX",
+      "ano": 2024,
+      "cor": "Vermelho",
+      "preco": "R$ 170.000",
+      "motor": "3.5L V6",
+      "ficha": "O Acura MDX e um SUV premium, conhecido por seu conforto, tecnologia avancada e excelente dirigibilidade."
+    },
+    { "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+      "marca": "Infiniti",
+      "modelo": "QX80",
+      "ano": 2024,
+      "cor": "Prata",
+      "preco": "R$ 220.000",
+      "motor": "5.6L V8",
+      "ficha": "O Infiniti QX80 e um SUV de luxo, oferecendo um interior sofisticado, tecnologia avancada e capacidade off-road."
+    },
+    { "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+      "marca": "Buick",
+      "modelo": "Enclave",
+      "ano": 2024,
+      "cor": "Azul Marinho",
+      "preco": "R$ 180.000",
+      "motor": "3.6L V6",
+      "ficha": "O Buick Enclave e um SUV de luxo com três fileiras de assentos, oferecendo conforto e estilo premium."
+    },
+    { "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+      "marca": "Kia",
+      "modelo": "Sorento",
+      "ano": 2024,
+      "cor": "Verde Oliva",
+      "preco": "R$ 150.000",
+      "motor": "2.5L Turbo",
+      "ficha": "O Kia Sorento e um SUV versátil e familiar, conhecido por seu interior espacoso, conforto e tecnologia avancada."
+    },
+    {
+      "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+      "marca": "Volvo",
+      "modelo": "XC90",
+      "ano": 2024,
+      "cor": "Marrom",
+      "preco": "R$ 190.000",
+      "motor": "2.0L Turbo",
+      "ficha": "O Volvo XC90 e um SUV de luxo, conhecido por sua seguranca avancada, design escandinavo e tecnologia inovadora."
+    },
+    {
+      "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+      "marca": "Mitsubishi",
+      "modelo": "Pajero Sport",
+      "ano": 2024,
+      "cor": "Prata",
+      "preco": "R$ 160.000",
+      "motor": "3.0L V6",
+      "ficha": "O Mitsubishi Pajero Sport e um SUV robusto e confiável, perfeito para aventuras off-road e uso diário."
+    },
+    {
+      "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+      "marca": "Suzuki",
+      "modelo": "Jimny",
+      "ano": 2024,
+      "cor": "Vermelho",
+      "preco": "R$ 90.000",
+      "motor": "1.5L",
+      "ficha": "O Suzuki Jimny e um SUV compacto e ágil, conhecido por sua capacidade off-road e confiabilidade."
+    },
+    {
+      "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+      "marca": "Jeep",
+      "modelo": "Renegade",
+      "ano": 2024,
+      "cor": "Laranja",
+      "preco": "R$ 110.000",
+      "motor": "1.8L",
+      "ficha": "O Jeep Renegade e um SUV compacto muito popular, oferecendo estilo robusto e capacidade off-road."
+    }
+ ]
+}

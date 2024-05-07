@@ -1,0 +1,26 @@
+<body>
+<main>
+  <section *ngFor="let car of displayedCars">
+    <div class="img-container">
+      <img src="{{car.foto}}" alt="">
+
+    </div>  <hr style="width: 0px; height: 200px; color: red;">
+    <div class="car-title">
+      <h2>{{ car.marca.toUpperCase() }} <br><span class="strong-red">{{ car.modelo.toUpperCase() }}</span></h2>
+      <h3>{{ car.motor }} {{ car.ano }}</h3>
+      <br>
+
+      <h1>{{ car.preco }}</h1>
+    </div>
+    <div class="pricing">
+      <button type="button" (click)="navToDetails()">See Details</button>
+    </div>
+  </section>
+
+</main>
+
+  <mat-paginator [length]="totalCars" [pageSize]="10" (page)="onPageChange($event)">
+  </mat-paginator>
+
+
+</body>

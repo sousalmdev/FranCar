@@ -1,0 +1,28 @@
+
+<body>
+
+
+<main >
+
+
+  <section class="car-info">
+    <div class="info-container">
+      <div class="title-area">
+        <span class="column"
+          ><h2>{{ car.marca }}</h2>
+          <h3>{{ car.modelo }}</h3>
+        </span>
+        <span class="column">
+          <h2>
+            $ <span class="price">{{ car.preco }}</span>
+          </h2>
+        </span>
+      </div>
+      <img src="{{ car.foto }}" alt="" />
+
+      <p class="car-desc">{{ car.ficha }}</p>
+    </div>
+  </section>
+</main>
+</body>
+
