@@ -5,7 +5,6 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-vehicle-grade',
   templateUrl: './vehicle-grade.component.html',
-  styleUrls: ['./vehicle-grade.component.css']
 })
 export class VehicleGradeComponent implements OnInit {
   vehicleData: any = vehicleData; // Atribua todo o objeto vehicleData ao invés de apenas vehicleData.carros
