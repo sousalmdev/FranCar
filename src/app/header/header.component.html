@@ -1,10 +1,7 @@
 <header
   class="z-50 2xl:py-2 py-0 shadow-md fixed w-full bg-red-600 flex items-center justify-center"
 >
-  <nav
-    class="w-11/12 flex justify-between"
-    style="font-family: 'Poppins'"
-  >
+  <nav class="w-11/12 flex justify-between" style="font-family: 'Poppins'">
     <a href="/home">
       <img
         src="assets/img/Component 43.png"
@@ -15,33 +12,42 @@
         Fran<span class="text-gray-800">Car</span>
       </h2></a
     >
-   <div class="flex items-center"> <button mat-icon-button (click)="toggleSearchInput()">
-      <mat-icon class="text-white">search</mat-icon>
-    </button>
-    <input class="2xl:flex hidden 2xl:w-1/2 w-36 p-2 rounded bg-gray-800 text-white" type="search" placeholder="Pesquisar..." />
- <input class="2xl:hidden sm:flex 2xl:w-1/2 w-36 p-2 rounded bg-gray-800 text-white" *ngIf="showSearchInput" type="search" placeholder="Pesquisar..." />
-    <button
-    mat-icon-button
-    [matMenuTriggerFor]="menu"
-    aria-label="Example icon-button with a menu"
-    >
-
-
-    <mat-icon class="text-white">more_vert</mat-icon>
-    </button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item>
-        <mat-icon>home</mat-icon>
-        <span>Back to Home</span>
+    <div class="flex items-center">
+      <button mat-icon-button (click)="toggleSearchInput()">
+        <mat-icon class="text-white">search</mat-icon>
       </button>
-      <button mat-menu-item disabled>
-        <mat-icon>sort</mat-icon>
-        <span>Filter</span>
+      <input
+        class="2xl:flex hidden 2xl:w-1/2 w-36 p-2 rounded bg-gray-800 text-white"
+        type="search"
+        placeholder="Pesquisar..."
+      />
+      <input
+        class="2xl:hidden sm:flex 2xl:w-1/2 w-36 p-2 rounded bg-gray-800 text-white"
+        *ngIf="showSearchInput"
+        type="search"
+        placeholder="Pesquisar..."
+      />
+      <button
+        mat-icon-button
+        [matMenuTriggerFor]="menu"
+        aria-label="Example icon-button with a menu"
+      >
+        <mat-icon class="text-white">more_vert</mat-icon>
       </button>
-      <button mat-menu-item>
-        <mat-icon>phone</mat-icon>
-        <span>Contact Us</span>
-      </button>
-    </mat-menu></div>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>home</mat-icon>
+          <span>Back to Home</span>
+        </button>
+        <button mat-menu-item disabled>
+          <mat-icon>sort</mat-icon>
+          <span>Filter</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>phone</mat-icon>
+          <span>Contact Us</span>
+        </button>
+      </mat-menu>
+    </div>
   </nav>
 </header>

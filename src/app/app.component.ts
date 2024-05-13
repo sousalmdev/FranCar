@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router,Navigation,NavigationStart,NavigationEnd } from '@angular/router';
+import { Router,NavigationStart,NavigationEnd } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

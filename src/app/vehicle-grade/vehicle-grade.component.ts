@@ -10,15 +10,14 @@ export class VehicleGradeComponent implements OnInit {
   vehicleData: any = vehicleData;
   displayedCars: any[] = [];
   totalCars: number = 0;
-  constructor(private router: Router) {
-  }
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     this.totalCars = this.vehicleData.carros.length;
     this.displayedCars = this.vehicleData.carros.slice(0, 10);
   }
 
-  navToDetails(id:number): void {
+  navToDetails(id: number): void {
     this.router.navigateByUrl(`home/details/${id}`);
   }
 

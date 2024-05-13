@@ -2,15 +2,15 @@ import { Injectable } from '@angular/core';
 import * as data from '../details/data.json';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CarService {
-  carros : any [] = (data as any).default;
+  carros: any[] = (data as any).default;
 
-  constructor() { }
+  constructor() {}
 
   getCarById(id: number): any {
-    return this.carros.find(carro => carro.id === id);
+    return this.carros.find((carro) => carro.id === id);
   }
 
   getAllCars(): any[] {

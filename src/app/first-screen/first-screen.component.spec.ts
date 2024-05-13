@@ -8,7 +8,7 @@ describe('FirstScreenComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [FirstScreenComponent]
+      declarations: [FirstScreenComponent],
     });
     fixture = TestBed.createComponent(FirstScreenComponent);
     component = fixture.componentInstance;
