@@ -1,5 +1,5 @@
 import { Component} from '@angular/core';
-import { ActivatedRoute} from '@angular/router';
+import { ActivatedRoute, Router} from '@angular/router';
 import { CarService } from './details.service';
 import { MatIcon } from '@angular/material/icon';
 
@@ -13,6 +13,7 @@ export class DetailsComponent {
   constructor(
     private route: ActivatedRoute,
     private carService: CarService,
+    private router:Router
   ){}
 
   ngOnInit(): void {
@@ -20,5 +21,8 @@ export class DetailsComponent {
       const carId = +params['id'];
       this.car = this.carService.getCarById(carId);
     });
+  }
+  buyCar(id:number){
+    this.router.navigateByUrl(`/buying/${id}`)
   }
 }

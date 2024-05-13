@@ -61,7 +61,7 @@
             <span class="text-black font-black">{{ car.preco }}</span>
           </h2>
         </div>
-        <button type="button" class="px-4 py-2 transition-all hover:bg-black hover:text-red-600 bg-white 2xl:text-4xl text-2xl text-black font-black rounded-md shadow-md group">Ir para compra <span><mat-icon class="group-hover:text-white text-red-600">shopping_cart_outlined</mat-icon></span></button>
+        <button (click)="buyCar(car.id)" type="button" class="px-4 py-2 transition-all hover:bg-black hover:text-red-600 bg-white 2xl:text-4xl text-2xl text-black font-black rounded-md shadow-md group">Ir para compra <span><mat-icon class="group-hover:text-white text-red-600">shopping_cart_outlined</mat-icon></span></button>
       </div>
     </section>
   </main>

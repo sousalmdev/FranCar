@@ -24,6 +24,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { VehicleGradeComponent } from './vehicle-grade/vehicle-grade.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DetailsComponent } from './details/details.component';
+import { BuyingCarComponent } from './buying-car/buying-car.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +32,7 @@ import { DetailsComponent } from './details/details.component';
     HeaderComponent,
     VehicleGradeComponent,
     DetailsComponent,
+    BuyingCarComponent,
   ],
   imports: [
     BrowserModule,
