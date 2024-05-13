@@ -1,37 +1,68 @@
-<body class="text-white pt-20">
+<body class="text-white h-max bg-white/80 pt-20">
+  <main
+    class="py-20 min-h-screen flex items-center 2xl:justify-start justify-center flex-col"
+  >
+    <section
+      class="2xl:w-5/12 w-11/12 flex flex-col items-center justify-center"
+    >
+      <div
+        class="flex flex-col items-center px-3 py-10 bg-white text-black rounded-lg shadow-2xl"
+      >
+        <div class="flex flex-col items-center text-black justify-center p-5">
+          <div class="flex flex-col mb-6">
+            <h2 class="2xl:text-6xl text-3xl font-light">
+              {{ car.marca }}
+              <span class="font-black text-red-600"> {{ car.modelo }}</span>
+            </h2>
+          </div>
+          <img src="{{ car.foto }}" alt="" class="" />
 
-
-  <main class="py-20 min-h-screen flex items-center 2xl:justify-start justify-center flex-col">
-
-
-    <section class=" 2xl:w-5/12 w-11/12 flex flex-col  items-center justify-center">
-      <div class="flex flex-col items-center  p-3 bg-white text-black rounded-lg shadow-xl">
-        <div class="flex flex-col items-center justify-center p-5"><div class="flex flex-col mb-6">
-          <h2 class="2xl:text-6xl text-3xl font-light">{{ car.marca }} <span class="font-black text-red-600"> {{ car.modelo }}</span></h2>
-
-        </div>     <img src="{{ car.foto }}" alt="" class="">
-
-    <p class="2xl:text-3xl text-base  text-gray-700 font-light text-center w-11/12 my-4">{{ car.ficha }}</p>
-<div class="flex items-center justify-center gap-4">
-  <div class="bg-gray-800 2xl:text-2xl text-base text-center text-white font-light p-2 rounded-md"><div class="flex flex-col items-center justify-center ">
-    <h3>Lançamento:</h3>
-    <h3 class="font-black text-red-600">
-      {{car.ano}}
-    </h3>
-  </div></div>
-  <div class="bg-gray-800 2xl:text-2xl text-base text-center text-white font-light p-2 rounded-md"><div class="flex flex-col items-center justify-center ">
-    <h3>Motor:</h3>
-    <h3 class="font-black text-red-600">
-      {{car.motor}}
-    </h3>
-  </div></div>
-</div>
-       <h2 class="text-2xl font-normal text-center my-4 text-red-600">
-        <span class="font-black">VALOR:</span>
-        <br>
-        <span class="text-black font-black">{{ car.preco }}</span>
+          <p
+            class="2xl:text-3xl text-base text-gray-700 font-semibold text-center w-11/12 my-4"
+          >
+            {{ car.ficha }}
+          </p>
+          <div class="w-11/12  flex gap-5 text-center divide-x items-center justify-center ">
+            <div
+              class="2xl:text-2xl text-base flex items-center text-center text-white font-semibold p-3 rounded-md shadow-md "
+            >
+              <div class="flex flex-col items-center text-black justify-center">
+                <h3>Lançamento:</h3>
+                <h3 class="font-black text-red-600">
+                  {{ car.ano }}
+                </h3>
+              </div>
+            </div>
+            <div
+              class="2xl:text-2xl text-base flex items-center  text-center text-white font-semibold p-3 rounded-md shadow-md "
+            >
+              <div class="flex flex-col items-center text-black justify-center">
+                <h3>Motor:</h3>
+                <h3 class="font-black text-red-600">
+                  {{ car.motor }}
+                </h3>
+              </div>
+            </div>
+            <div
+            class="2xl:text-2xl text-base flex items-center  text-center text-white font-semibold p-3 rounded-md shadow-md "
+          >
+            <div class="flex flex-col items-center text-black justify-center">
+              <h3>Marca:</h3>
+              <h3 class="font-black text-red-600">
+                {{ car.marca }}
+              </h3>
+            </div>
+          </div>
+          </div>
+          <h2
+            class="2xl:text-4xl text-2xl font-normal text-center my-10 text-red-600"
+          >
+            <span class="font-black">VALOR: </span>
+            <span class="text-black font-black">{{ car.preco }}</span>
           </h2>
-      </div></div>
+        </div>
+        <button type="button" class="px-4 py-2 transition-all hover:bg-black hover:text-red-600 bg-white 2xl:text-4xl text-2xl text-black font-black rounded-md shadow-md group">Ir para compra <span><mat-icon class="group-hover:text-white text-red-600">shopping_cart_outlined</mat-icon></span></button>
+      </div>
     </section>
   </main>
-  </body>
+</body>

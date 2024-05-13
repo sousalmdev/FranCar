@@ -1,6 +1,7 @@
 import { Component} from '@angular/core';
 import { ActivatedRoute} from '@angular/router';
 import { CarService } from './details.service';
+import { MatIcon } from '@angular/material/icon';
 
 @Component({
   selector: 'app-details',
