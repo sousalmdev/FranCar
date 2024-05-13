@@ -1,15 +1,21 @@
 import { NgModule, importProvidersFrom } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import {MatIconModule} from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
 import { materialize } from 'rxjs';
-import {MatProgressSpinnerModule, MatSpinner} from '@angular/material/progress-spinner';
-import {MatButtonModule} from '@angular/material/button';
-import {MatSelectModule} from '@angular/material/select';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatSidenavModule} from '@angular/material/sidenav';
-import { MatProgressSpinner } from '@angular/material/progress-spinner';
-import {MatPaginatorModule} from '@angular/material/paginator'
+import {
+  MatProgressSpinnerModule,
+  MatSpinner,
+} from '@angular/material/progress-spinner';
+import { MatButtonModule } from '@angular/material/button';
+import {MatDialogModule} from '@angular/material/dialog';
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatPaginatorModule } from '@angular/material/paginator';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstScreenComponent } from './first-screen/first-screen.component';
@@ -20,7 +26,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { DetailsComponent } from './details/details.component';
 @NgModule({
   declarations: [
-    AppComponent ,
+    AppComponent,
     FirstScreenComponent,
     HeaderComponent,
     VehicleGradeComponent,
@@ -31,12 +37,17 @@ import { DetailsComponent } from './details/details.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
-    MatButtonModule,MatSidenavModule,
+    MatButtonModule,
+    MatSidenavModule,
     MatSelectModule,
-    MatFormFieldModule,HttpClientModule,
-    MatProgressSpinnerModule,MatPaginatorModule
+    MatDialogModule,
+    MatFormFieldModule,
+    HttpClientModule,
+    MatProgressSpinnerModule,
+    MatPaginatorModule,
+    MatMenuModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

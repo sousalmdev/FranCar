@@ -7,20 +7,19 @@ import { Router } from '@angular/router';
   templateUrl: './vehicle-grade.component.html',
 })
 export class VehicleGradeComponent implements OnInit {
-  vehicleData: any = vehicleData; // Atribua todo o objeto vehicleData ao invés de apenas vehicleData.carros
+  vehicleData: any = vehicleData;
   displayedCars: any[] = [];
-  totalCars: number = 0; // Declarar a propriedade totalCars
-
-  constructor(private router: Router) { }
-
-  ngOnInit(): void {
-    console.log(this.vehicleData); // Teste para verificar se os dados foram carregados corretamente
-    this.totalCars = this.vehicleData.carros.length; // Defina o número total de carros
-    this.displayedCars = this.vehicleData.carros.slice(0, 10); // Exiba os primeiros 10 carros ao iniciar
+  totalCars: number = 0;
+  constructor(private router: Router) {
   }
 
-  navToDetails(): void {
-    this.router.navigateByUrl('details/:id');
+  ngOnInit(): void {
+    this.totalCars = this.vehicleData.carros.length;
+    this.displayedCars = this.vehicleData.carros.slice(0, 10);
+  }
+
+  navToDetails(id:number): void {
+    this.router.navigateByUrl(`home/details/${id}`);
   }
 
   onPageChange(event: any): void {

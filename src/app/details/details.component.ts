@@ -1,18 +1,16 @@
-import { Component } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Component} from '@angular/core';
+import { ActivatedRoute} from '@angular/router';
 import { CarService } from './details.service';
 
 @Component({
   selector: 'app-details',
   templateUrl: './details.component.html',
-  styleUrls: ['./details.component.css']
 })
 export class DetailsComponent {
-  car: any;
+  car: any ;
 
   constructor(
     private route: ActivatedRoute,
-    private router: Router,
     private carService: CarService,
   ){}
 

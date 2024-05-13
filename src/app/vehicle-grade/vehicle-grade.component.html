@@ -1,26 +1,51 @@
-<body class="p-5" >
-<main class="py-20 flex flex-col items-center gap-20">
-  <section class="bg-white border-8 w-11/12 xl:w-2/3 md:flex-row flex-col flex items-center justify-evenly p-3 rounded-lg border-red-600 " *ngFor="let car of displayedCars">
-    <div class="img-container">
-      <img class="2xl:w-80 md:w-60 " src="{{car.foto}}" alt="">
+<body class="p-5">
+  <main class="py-20 flex flex-col items-center gap-20">
+    <section
+      class="bg-white border-8 w-11/12 xl:w-2/3 md:flex-row flex-col flex items-center justify-evenly p-3 rounded-lg border-red-600"
+      *ngFor="let car of displayedCars"
+    >
+      <div class="img-container">
+        <img class="2xl:w-80 md:w-60" src="{{ car.foto }}" alt="" />
+      </div>
+      <div
+        class="items-center justify-center flex xl:flex-col md:gap-10 sm:gap-0 xl:gap-0 text-left xl:flex-row sm:flex-col flex-col"
+      >
+        <div class="flex flex-col">
+          <h2
+            class="xl:text-4xl md:text-2xl sm:text-xl md:text-left text-center text-xl mb-2 font-light"
+          >
+            {{ car.marca.toUpperCase() }} <br class="xl:block hidden" /><span
+              class="font-black xl:text-4xl md:text-2xl sm:text-xl text-xl text-red-600"
+              >{{ car.modelo.toUpperCase() }}</span
+            >
+          </h2>
+          <h3
+            class="md:text-2xl md:text-left text-center xl:mb-2 md:m-0 mb-2 font-bold text-black/50"
+          >
+            {{ car.motor }} {{ car.ano }}
+          </h3>
+        </div>
+        <h1
+          class="2xl:text-4xl text-2xl font-black text-black decoration-8 underline decoration-red-600"
+        >
+          {{ car.preco }}
+        </h1>
+      </div>
+      <div class="md:mt-0 mt-5">
+        <button color="warn" mat-raised-button class="font-bold"
+          (click)="navToDetails(car.id)"
+        >
+          Mais Detalhes
+        </button>
+      </div>
+    </section>
+  </main>
 
-    </div>
-    <div class="items-center justify-center flex xl:flex-col md:gap-10 sm:gap-0 xl:gap-0 text-left xl:flex-row sm:flex-col flex-col ">
-      <div class="flex flex-col">
-      <h2 class="xl:text-4xl md:text-2xl sm:text-xl md:text-left text-center text-xl mb-2 font-light">{{ car.marca.toUpperCase() }} <br class="xl:block hidden"><span class="font-black xl:text-4xl md:text-2xl sm:text-xl text-xl text-red-600">{{ car.modelo.toUpperCase() }}</span></h2>
-      <h3 class="md:text-2xl md:text-left text-center xl:mb-2 md:m-0 mb-2 font-bold text-black/50 ">{{ car.motor }} {{ car.ano }}</h3>
-</div>
-      <h1 class="2xl:text-4xl text-2xl  font-black text-black decoration-8 underline decoration-red-600">{{ car.preco }}</h1>
-    </div>
-    <div class="md:mt-0 mt-5">
-      <button class="hover:bg-red-600 bg-gray-100/60 transition-all p-4  text-base shadow-md rounded-2xl font-semibold text-red-600 hover:text-white" type="button" (click)="navToDetails()">Mais Detalhes</button>
-    </div>
-  </section>
-
-</main>
-
-  <mat-paginator class=" md:text-left text-center flex items-center justify-center" [length]="totalCars" [pageSize]="10" (page)="onPageChange($event)">
+  <mat-paginator
+    class="md:text-left text-center flex items-center justify-center"
+    [length]="totalCars"
+    [pageSize]="10"
+    (page)="onPageChange($event)"
+  >
   </mat-paginator>
-
-
 </body>

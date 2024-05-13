@@ -5,16 +5,15 @@ import * as data from '../details/data.json';
   providedIn: 'root'
 })
 export class CarService {
-  carros: any[] = (data as any).default;
+  carros : any [] = (data as any).default;
 
   constructor() { }
 
   getCarById(id: number): any {
-    return this.carros.find(carro =>carro.Id=== id);
+    return this.carros.find(carro => carro.id === id);
   }
 
   getAllCars(): any[] {
     return this.carros;
   }
-
 }
