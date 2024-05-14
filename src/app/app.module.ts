@@ -1,6 +1,8 @@
 import { NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
@@ -36,7 +38,7 @@ import { BuyingCarComponent } from './buying-car/buying-car.component';
     MatButtonModule,
     MatSidenavModule,
     MatSelectModule,
-    MatDialogModule,
+    MatSnackBarModule,
     MatFormFieldModule,
     MatPaginatorModule,
     MatMenuModule,
