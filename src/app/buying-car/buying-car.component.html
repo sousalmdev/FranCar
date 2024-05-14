@@ -1,28 +1,74 @@
 <body class="text-white h-max bg-white/80 pt-20">
-  <main class="py-20 min-h-screen flex items-center 2xl:justify-start justify-center flex-col">
-    <section class="2xl:w-5/12 w-11/12 flex flex-col items-center justify-center">
-      <div class="flex flex-col items-center px-3 py-10 bg-white text-black rounded-lg shadow-2xl">
+  <main
+    class="py-20 min-h-screen flex items-center 2xl:justify-start justify-center flex-col"
+  >
+    <section
+      class="2xl:w-5/12 w-11/12 flex flex-col items-center justify-center"
+    >
+      <div
+        class="flex flex-col items-center px-3 py-10 bg-white text-black rounded-lg shadow-2xl"
+      >
         <h2 class="2xl:text-4xl text-2xl font-light text-center">
           Você está adquirindo:
-          <br>
-          <span class="font-black text-red-600 mt-2"> {{ car.marca }} {{ car.modelo }} {{car.ano}}</span>
+          <br />
+          <span class="font-black text-red-600 mt-2">
+            {{ car.marca }} {{ car.modelo }} {{ car.ano }}</span
+          >
         </h2>
         <img src="{{ car.foto }}" alt="" class="my-4" />
-        <h2 class="2xl:text-5xl text-3xl font-black text-red-600 mt-2 text-center">{{car.preco}}</h2>
-        <form (submit)="onSubmit($event)" id="form" class="w-11/12 mt-6 flex flex-col ">
+        <h2
+          class="2xl:text-5xl text-3xl font-black text-red-600 mt-2 text-center"
+        >
+          {{ car.preco }}
+        </h2>
+        <form
+          (submit)="onSubmit($event)"
+          id="form"
+          class="w-11/12 mt-6 flex flex-col"
+        >
           <div class="flex flex-col mb-4">
             <label for="nome" class="2xl:text-lg text-sm mb-1">Nome:</label>
-            <input required type="text" id="nome" name="nome" class="border rounded-md px-3 py-2 ">
+            <input
+              required
+              type="text"
+              id="nome"
+              name="nome"
+              class="border rounded-md px-3 py-2"
+            />
           </div>
           <div class="flex flex-col mb-4">
-            <label for="endereco" class="2xl:text-lg text-sm mb-1">Endereço:</label>
-            <input required type="text" id="endereco" name="endereco" class="border rounded-md px-3 py-2">
+            <label for="endereco" class="2xl:text-lg text-sm mb-1"
+              >Endereço:</label
+            >
+            <input
+              required
+              type="text"
+              id="endereco"
+              name="endereco"
+              class="border rounded-md px-3 py-2"
+            />
           </div>
           <div class="flex flex-col mb-4">
             <label for="email" class="2xl:text-lg text-sm mb-1">E-mail:</label>
-            <input required type="email" id="email" name="email" class="border rounded-md px-3 py-2">
+            <input
+              required
+              type="email"
+              id="email"
+              name="email"
+              class="border rounded-md px-3 py-2"
+            />
           </div>
-          <button type="submit" class="self-center text-center px-4 py-2 transition-all hover:bg-black hover:text-red-600 bg-white 2xl:text-4xl text-2xl text-black font-black rounded-md shadow-md group">Confirmar Compra <span><mat-icon class="group-hover:text-white text-red-600">shopping_cart_outlined</mat-icon></span></button>
+          <button
+            type="submit"
+            class="self-center text-center px-4 py-2 transition-all hover:bg-black hover:text-red-600 bg-white 2xl:text-4xl text-2xl text-black font-black rounded-md shadow-md group"
+          >
+            Confirmar Compra
+            <span
+              ><mat-icon class="group-hover:text-white text-red-600"
+                >shopping_cart_outlined</mat-icon
+              ></span
+            >
+          </button>
         </form>
       </div>
     </section>

@@ -1,7 +1,39 @@
 <body class="p-5">
   <main class="py-20 flex flex-col items-center gap-20">
+    <div
+      id="presentation"
+      class="justify-center flex flex-col xl:w-2/3 w-11/12"
+    >
+      <h1
+        class="font-bold text-red-600 2xl:text-5xl text-2xl text-center"
+      >
+
+          O que podemos fazer por você hoje?
+        
+      </h1>
+      <div
+        class="mt-5 2xl:p-10 p-2 self-center border text-black flex flex-col bg-white shadow-md 2xl:w-2/3 w-full rounded-md"
+      >
+        <h3 class="text-left 2xl:text-3xl text-base font-semibold">
+          Pesquisar Veículos:
+        </h3>
+        <div class=" mt-5 flex items-center gap-2">
+          <input
+            placeholder="Digite a marca/modelo do carro"
+            mat-icon="search"
+            class="placeholder:font-semibold  w-10/12 self-start active:border-red-600 active:border-4 p-3 border rounded-md"
+            type="search"
+            name="search"
+            id=""
+          />
+         <button class="bg-red-600 p-3 text-white rounded-md flex items-center">
+              <mat-icon>search</mat-icon>
+            </button>
+        </div>
+      </div>
+    </div>
     <section
-      class="bg-white border-8 w-11/12 xl:w-2/3 md:flex-row flex-col flex items-center justify-evenly p-3 rounded-lg border-red-600"
+      class="border border-black/20 bg-white shadow-xl w-11/12 xl:w-2/3 md:flex-row flex-col flex items-center justify-evenly p-3 rounded-lg"
       *ngFor="let car of displayedCars"
     >
       <div class="img-container">
@@ -33,12 +65,13 @@
       </div>
       <div class="md:mt-0 mt-5">
         <button
-          color="warn"
-          mat-raised-button
-          class="font-bold"
+          class="font-bold p-3 bg-red-600/70 flex items-center justify-center text-white hover:bg-red-600 transition-all rounded-md 2xl:text-2xl text-base"
           (click)="navToDetails(car.id)"
         >
           Mais Detalhes
+          <span class="self-center pr-4 pl-2 w-4 mt-2"
+            ><mat-icon>add</mat-icon></span
+          >
         </button>
       </div>
     </section>
