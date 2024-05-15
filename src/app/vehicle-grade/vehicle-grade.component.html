@@ -2,51 +2,52 @@
   <main class="py-24 flex flex-col items-center gap-10">
     <div
       id="presentation"
-      class="justify-center flex flex-col xl:w-2/3 w-11/12"
+      class="justify-center flex flex-col xl:w-2/3 p-4 w-full"
     >
-      <h1
-        class="font-black text-red-600 2xl:text-5xl text-2xl text-center"
-      >
-
-          <span class="font-semibold text-black/80">O que podemos fazer por você </span> hoje?
-
+      <h1 class="font-black text-red-600 2xl:text-5xl text-2xl text-center">
+        <span class="font-semibold text-black/80"
+          >O que podemos fazer por você
+        </span>
+        hoje?
       </h1>
       <div
-        class="mt-10 2xl:p-10 p-3 self-center border text-black flex flex-col bg-white shadow-md 2xl:w-2/3 w-full rounded-md"
+        class="mt-10 2xl:p-10 p-3 border text-black flex justify-center flex-col bg-white shadow-md w-full rounded-md"
       >
         <h3 class="text-left 2xl:text-3xl text-base font-semibold">
           Pesquisar Veículos:
         </h3>
-        <div class=" mt-5 flex items-center gap-2">
+        <div class="mt-5 flex items-center gap-2">
           <input
-          placeholder="Digite a marca/modelo do carro"
-          (ngModel)="searchQuery"
-          class="placeholder:font-semibold w-10/12 self-start active:border-red-600 active:border-4 p-3 border rounded-md"
-          type="search"
-          name="search"
-          id=""
-        />
+            placeholder="Digite a marca/modelo do carro"
+            (ngModel)="(searchQuery)"
+            class="placeholder:font-semibold w-10/12 self-start active:border-red-600 active:border-4 p-3 border rounded-md"
+            type="search"
+            name="search"
+            id=""
+          />
 
-        <button class="bg-red-600 p-3 text-white rounded-md flex items-center" (click)="search()">
-          <mat-icon>search</mat-icon>
-        </button>
-
+          <button
+            class="bg-red-600 p-3 text-white rounded-md flex items-center"
+            (click)="search()"
+          >
+            <mat-icon>search</mat-icon>
+          </button>
         </div>
       </div>
     </div>
+
     <div class="2xl:w-2/3 w-11/12">
       <h1
-      class="font-black text-red-600 2xl:text-5xl text-2xl 2xl:text-left text-center"
-    >
-
-        <span class="font-semibold text-black/80">Nossas principais</span> Ofertas:
-
-    </h1></div>
+        class="font-black text-red-600 2xl:text-5xl text-2xl 2xl:text-left text-center"
+      >
+        <span class="font-semibold text-black/80">Nossas principais</span>
+        Ofertas:
+      </h1>
+    </div>
 
     <section
       class="border border-black/20 bg-white shadow-xl w-11/12 xl:w-2/3 md:flex-row flex-col flex items-center justify-evenly p-4 rounded-lg"
       *ngFor="let car of displayedCars"
-
     >
       <div class="img-container">
         <img class="2xl:w-80 md:w-60" src="{{ car.foto }}" alt="" />
@@ -56,33 +57,34 @@
       >
         <div class="flex flex-col">
           <h2
-            class="xl:text-4xl md:text-2xl sm:text-xl md:text-left text-center text-xl mb-2 font-light"
+            class="xl:text-4xl md:text-3xl sm:text-3xl md:text-left text-center text-xl mb-2 font-light"
           >
             {{ car.marca.toUpperCase() }} <br class="xl:block hidden" /><span
-              class="font-black xl:text-4xl md:text-2xl sm:text-xl text-xl text-red-600"
+              class="font-black xl:text-4xl md:text-3xl sm:text-3xl text-xl text-red-600"
               >{{ car.modelo.toUpperCase() }}</span
             >
-          </h2>
+          </h2>    <h1
+          class="2xl:text-4xl sm:text-4xl text-2xl font-black text-black decoration-8 underline decoration-red-600 2xl:text-left xl:text-left md:text-left  sm:text-center text-center"
+        >
+          {{ car.preco }}
+        </h1>
           <h3
-            class="md:text-2xl md:text-left text-center xl:mb-2 md:m-0 mb-2 font-bold text-black/50"
+            class="md:text-2xl sm:text-2xl md:text-left text-center my-2 font-semibold text-black/50"
           >
             {{ car.motor }} {{ car.ano }}
           </h3>
         </div>
-        <h1
-          class="2xl:text-4xl text-2xl font-black text-black decoration-8 underline decoration-red-600"
-        >
-          {{ car.preco }}
-        </h1>
+
       </div>
       <div class="md:mt-0 mt-5">
         <button
-          class="font-bold p-3 bg-red-600/70 flex items-center justify-center text-white hover:bg-red-600 transition-all rounded-md 2xl:text-2xl text-base"
+          class="font-bold 2xl:p-3 py-1 px-3 2xl:w-56 w-full bg-red-600/70 flex items-center justify-center text-white hover:bg-red-600 transition-all rounded-md 2xl:text-2xl text-base"
           (click)="navToDetails(car.id)"
         >
           Mais Detalhes
           <span class="self-center pr-4 pl-2 w-4 mt-2"
-            ><mat-icon>add</mat-icon></span
+            ><mat-icon>zoom_in
+            </mat-icon></span
           >
         </button>
       </div>

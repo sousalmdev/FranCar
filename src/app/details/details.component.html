@@ -8,23 +8,23 @@
       <div class="flex flex-col items-center py-10 bg-white text-black">
         <div class="flex flex-col items-center text-black justify-center p-5">
           <div class="flex flex-col mb-6">
-            <h2 class="2xl:text-6xl text-3xl font-light">
-              {{ car.marca }}
-              <span class="font-black text-red-600"> {{ car.modelo }}</span>
+            <h2 class=" text-center sm:text-6xl text-3xl font-semibold">
+              {{ car.marca.toUpperCase() }}
+              <span class="font-black text-red-600">{{ car.modelo.toUpperCase() }}</span>
             </h2>
           </div>
           <img src="{{ car.foto }}" alt="" class="" />
 
           <p
-            class="2xl:text-3xl text-base text-gray-700 font-semibold text-center w-11/12 my-4"
+            class="md:text-3xl sm:text-xl text-base text-gray-700 font-light sm:text-left text-center 2xl:w-11/12 sm:w-3/4 w-11/12 my-4"
           >
             {{ car.ficha }}
           </p>
           <div
-            class="w-11/12 flex gap-5 text-center divide-x items-center justify-center"
+            class="w-full flex text-center items-center 2xl:justify-center xl:justify-center md:justify-center sm:justify-evenly md:gap-6 justify-between"
           >
             <div
-              class="2xl:text-2xl text-base flex items-center text-center text-white font-semibold p-3 rounded-md shadow-md"
+              class="sm:text-2xl text-base flex items-center text-center text-white font-semibold p-3 rounded-md shadow-md"
             >
               <div class="flex flex-col items-center text-black justify-center">
                 <h3>Lançamento:</h3>
@@ -34,34 +34,27 @@
               </div>
             </div>
             <div
-              class="2xl:text-2xl text-base flex items-center text-center text-white font-semibold p-3 rounded-md shadow-md"
+              class="sm:text-2xl text-base flex p-3 items-center text-center text-white font-semibold rounded-md shadow-md"
             >
-              <div class="flex flex-col items-center text-black justify-center">
-                <h3>Motor:</h3>
-                <h3 class="font-black text-red-600">
-                  {{ car.motor }}
-                </h3>
-              </div>
-            </div>
-            <div
-              class="2xl:text-2xl text-base flex items-center text-center text-white font-semibold p-3 rounded-md shadow-md"
-            >
-              <div class="flex flex-col items-center text-black justify-center">
-                <h3>Marca:</h3>
-                <h3 class="font-black text-red-600">
-                  {{ car.marca }}
+              <div class="flex items-center text-black justify-center">
+                <h3>
+                  Motor:
+                  <br />
+                  <span class="w-full font-black text-red-600">
+                    {{ car.motor }}
+                  </span>
                 </h3>
               </div>
             </div>
           </div>
           <div
-            class="2xl:text-3xl h-16 items-center 2xl:w-1/2 w-11/12 flex text-xl shadow-md font-normal text-center my-10 bg-black rounded-md text-black"
+            class="2xl:text-2xl h-16 items-center  md:w-1/2 sm:w-11/12 w-11/12 flex text-xl shadow-md font-normal text-center my-10 bg-black rounded-md text-black"
           >
             <span
               class="bg-red-600 w-7 h-full text-red-600 relative left-0 rounded-e-3xl rounded-s-md"
               >.</span
             >
-            <h2 class="ml-3 text-white">
+            <h2 class="m-auto text-white text-center px-1 self-center">
               <span class="font-black 2xl:ml-2">VALOR: </span>
               <span class="font-black">{{ car.preco }},00</span>
             </h2>
