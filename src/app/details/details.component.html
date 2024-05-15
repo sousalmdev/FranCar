@@ -1,13 +1,11 @@
-<body class="text-white h-max bg-white/80 pt-20">
+<body class="px-5 text-white h-max bg-white pt-20">
   <main
-    class="py-20 min-h-screen flex items-center 2xl:justify-start justify-center flex-col"
+    class="py-20 px-5 min-h-screen flex items-center 2xl:justify-start justify-center flex-col"
   >
     <section
-      class="2xl:w-5/12 w-11/12 flex flex-col items-center justify-center"
+      class="2xl:w-5/12 w-11/12 2xl:border 2xl:shadow rounded flex flex-col items-center justify-center"
     >
-      <div
-        class="flex flex-col items-center px-3 py-10 bg-white text-black rounded-lg shadow-2xl"
-      >
+      <div class="flex flex-col items-center py-10 bg-white text-black">
         <div class="flex flex-col items-center text-black justify-center p-5">
           <div class="flex flex-col mb-6">
             <h2 class="2xl:text-6xl text-3xl font-light">
@@ -56,21 +54,27 @@
               </div>
             </div>
           </div>
-          <h2
-            class="2xl:text-4xl text-2xl font-normal text-center my-10 text-red-600"
+          <div
+            class="2xl:text-3xl h-16 items-center 2xl:w-1/2 w-11/12 flex text-xl shadow-md font-normal text-center my-10 bg-black rounded-md text-black"
           >
-            <span class="font-black">VALOR: </span>
-            <span class="text-black font-black">{{ car.preco }}</span>
-          </h2>
+            <span
+              class="bg-red-600 w-7 h-full text-red-600 relative left-0 rounded-e-3xl rounded-s-md"
+              >.</span
+            >
+            <h2 class="ml-3 text-white">
+              <span class="font-black 2xl:ml-2">VALOR: </span>
+              <span class="font-black">{{ car.preco }},00</span>
+            </h2>
+          </div>
         </div>
         <button
           (click)="buyCar(car.id)"
           type="button"
-          class="px-4 py-2 transition-all hover:bg-black hover:text-red-600 bg-white 2xl:text-4xl text-2xl text-black font-black rounded-md shadow-md group"
+          class="2xl:w-1/2 w-10/12 px-4 py-3 flex items-center justify-center gap-2 transition-all hover:scale-100 hover:shadow-2xl text-white bg-red-600 2xl:text-4xl text-3xl font-black rounded-md shadow-md group"
         >
-          Ir para compra
+          COMPRAR
           <span
-            ><mat-icon class="group-hover:text-white text-red-600"
+            ><mat-icon class="2xl:mt-0 mt-2"
               >shopping_cart_outlined</mat-icon
             ></span
           >

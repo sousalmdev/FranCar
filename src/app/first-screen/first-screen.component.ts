@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 })
 export class FirstScreenComponent {
   myImage: string =
-    'assets/img/carro-branco-isolado_176382-1602-removebg-preview.png';
+    'assets/img/1967-Chevrolet-Impala-PNG-Clipart.png';
 
   constructor(private router: Router) {}
 
