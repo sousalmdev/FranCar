@@ -10,13 +10,19 @@ export class VehicleGradeComponent implements OnInit {
   vehicleData: any = vehicleData;
   displayedCars: any[] = [];
   totalCars: number = 0;
-  searchQuery: string = '';
 
   constructor(private router: Router) {}
 
   ngOnInit(): void {
     this.totalCars = this.vehicleData.carros.length;
     this.displayedCars = this.vehicleData.carros.slice(0, 10);
+  }
+
+  search(query: string): void {
+    const searchResults = this.vehicleData.carros.filter((car:any) =>
+      car.modelo.toLowerCase().includes(query) || car.marca.toLowerCase().includes(query)
+    );
+    this.router.navigateByUrl(`home/search/${query}`);
   }
 
   navToDetails(id: number): void {
@@ -26,27 +32,6 @@ export class VehicleGradeComponent implements OnInit {
   onPageChange(event: any): void {
     const startIndex = event.pageIndex * event.pageSize;
     const endIndex = startIndex + event.pageSize;
-    if (this.searchQuery) {
-      this.displayedCars = this.searchCars().slice(startIndex, endIndex);
-    } else {
-      this.displayedCars = this.vehicleData.carros.slice(startIndex, endIndex);
-    }
-  }
-
-  search(): void {
-    if (this.searchQuery.trim() !== '') {
-      this.displayedCars = this.searchCars();
-      this.totalCars = this.displayedCars.length;
-    } else {
-      this.totalCars = this.vehicleData.carros.length;
-      this.displayedCars = this.vehicleData.carros.slice(0, 10);
-    }
-  }
-
-  public searchCars(): any[] {
-    const query = this.searchQuery.trim().toLowerCase();
-    return this.vehicleData.carros.filter((car:any) =>
-      car.marca.toLowerCase().includes(query) || car.modelo.toLowerCase().includes(query)
-    );
+    this.displayedCars = this.vehicleData.carros.slice(startIndex, endIndex);
   }
 }

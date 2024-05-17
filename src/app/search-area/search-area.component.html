@@ -1,50 +1,12 @@
 <body class="p-5">
   <main class="py-24 flex flex-col items-center gap-10">
-    <div
-      id="presentation"
-      class="justify-center flex flex-col xl:w-2/3 p-4 w-full"
-    >
+
       <h1 class="font-black text-red-600 2xl:text-5xl text-2xl text-center">
         <span class="font-semibold text-black/80"
-          >O que podemos fazer por você
+          >Resultados para
         </span>
-        hoje?
+        "{{query.toUpperCase()}}"
       </h1>
-      <div
-        class="mt-10 2xl:p-10 p-3 border text-black flex justify-center flex-col bg-white shadow-md w-full rounded-md"
-      >
-        <h3 class="text-left 2xl:text-3xl text-base font-semibold">
-          Pesquisar Veículos:
-        </h3>
-        <div class="mt-5 flex items-center gap-2">
-          <input
-            placeholder="Digite a marca/modelo do carro"
-
-            class="placeholder:font-semibold w-10/12 self-start active:border-red-600 active:border-4 p-3 border rounded-md"
-            type="search"
-            name="search"
-            id='searchInput'
-            #searchInput
-
-          />
-
-          <button (click)="search(searchInput.value)"
-            class="bg-red-600 p-3 text-white rounded-md flex items-center"
-          >
-            <mat-icon>search</mat-icon>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="2xl:w-2/3 w-11/12">
-      <h1
-        class="font-black text-red-600 2xl:text-5xl text-2xl 2xl:text-left text-center"
-      >
-        <span class="font-semibold text-black/80">Nossas principais</span>
-        Ofertas:
-      </h1>
-    </div>
 
     <section
       class="border border-black/20 bg-white shadow-xl w-11/12 xl:w-2/3 md:flex-row flex-col flex items-center justify-evenly p-4 rounded-lg"
@@ -92,11 +54,4 @@
     </section>
   </main>
 
-  <mat-paginator
-    class="md:text-left text-center flex items-center justify-center"
-    [length]="totalCars"
-    [pageSize]="10"
-    (page)="onPageChange($event)"
-  >
-  </mat-paginator>
 </body>

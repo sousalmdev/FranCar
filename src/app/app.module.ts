@@ -21,6 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { VehicleGradeComponent } from './vehicle-grade/vehicle-grade.component';
 import { DetailsComponent } from './details/details.component';
 import { BuyingCarComponent } from './buying-car/buying-car.component';
+import { SearchAreaComponent } from './search-area/search-area.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +30,7 @@ import { BuyingCarComponent } from './buying-car/buying-car.component';
     VehicleGradeComponent,
     DetailsComponent,
     BuyingCarComponent,
+    SearchAreaComponent,
   ],
   imports: [
     BrowserModule,
