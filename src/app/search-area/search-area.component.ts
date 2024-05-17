@@ -1,26 +1,65 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import * as data from '../buying-car/data.json'
+import {MatSelectChange, MatSelectModule, MatSelectTrigger} from '@angular/material/select';
+
+import * as data from '../buying-car/data.json';
+import { MatMenu } from '@angular/material/menu';
+import { MatIcon } from '@angular/material/icon';
+import { MatIconButton } from '@angular/material/button';
+
 @Component({
   selector: 'app-search-area',
   templateUrl: './search-area.component.html',
 })
 export class SearchAreaComponent implements OnInit {
-  displayedCars: any[] = (data as any).default;
+  allCars: any[] = (data as any).default;
+  displayedCars: any[] = [];
   query: string = '';
+  sortCriteria: 'anoAsc' | 'anoDesc' | 'marcaAsc' = 'marcaAsc';
 
   constructor(private route: ActivatedRoute, private router: Router) {}
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
       this.query = params['query'];
-      if (this.query) {
-        this.displayedCars = this.displayedCars.filter((car:any) =>
-          car.modelo.toLowerCase().includes(this.query.toLowerCase()) ||
-          car.marca.toLowerCase().includes(this.query.toLowerCase())
-        );
-      }
+      this.filterCars();
     });
+  }
+
+  filterCars(): void {
+    if (this.query) {
+      this.displayedCars = this.allCars.filter((car: any) =>
+        car.marca.toLowerCase().includes(this.query.toLowerCase()) ||
+        car.marca.toLowerCase().includes(this.query.toLowerCase())
+      );
+    } else {
+      this.displayedCars = [...this.allCars];
+    }
+
+    this.sortCars();
+  }
+
+  sortCars(): void {
+    this.displayedCars.sort((a, b) => {
+      if (this.sortCriteria === 'anoDesc') {
+        return a.ano - b.ano;
+      } else if (this.sortCriteria === 'anoAsc') {
+        return b.ano - a.ano;
+      } else if (this.sortCriteria === 'marcaAsc') {
+        return a.marca.localeCompare(b.marca);
+      }
+      return 0;
+    });
+  }
+
+
+
+  onSortChange(event: MatSelectChange): void {
+    const value = event.value;
+    if (value) {
+      this.sortCriteria = value as 'anoAsc' | 'anoDesc' | 'marcaAsc'
+      this.sortCars();
+    }
   }
 
   navToDetails(id: number): void {
