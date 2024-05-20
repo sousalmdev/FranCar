@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router,NavigationStart,NavigationEnd } from '@angular/router';
+import { LoadingScreenComponent } from './loading-screen/loading-screen.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

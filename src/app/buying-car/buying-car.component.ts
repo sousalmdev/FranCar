@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { BuyingCarService } from './buying-car.service';
 import {
   MatSnackBar,
@@ -16,7 +16,8 @@ export class BuyingCarComponent {
   constructor(
     private snackBar: MatSnackBar,
     private route: ActivatedRoute,
-    public buyService: BuyingCarService
+    public buyService: BuyingCarService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -35,6 +36,9 @@ export class BuyingCarComponent {
       });
       event.preventDefault();
       form.reset();
+      setTimeout(() => {
+        this.router.navigateByUrl('/thanks');
+      }, 2000);
     } else {
       alert("don't works");
     }

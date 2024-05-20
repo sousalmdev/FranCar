@@ -30,7 +30,7 @@ export class SearchAreaComponent implements OnInit {
     if (this.query) {
       this.displayedCars = this.allCars.filter((car: any) =>
         car.marca.toLowerCase().includes(this.query.toLowerCase()) ||
-        car.marca.toLowerCase().includes(this.query.toLowerCase())
+        car.modelo.toLowerCase().includes(this.query.toLowerCase())
       );
     } else {
       this.displayedCars = [...this.allCars];

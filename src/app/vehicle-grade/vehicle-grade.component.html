@@ -51,7 +51,7 @@
       *ngFor="let car of displayedCars"
     >
       <div class="img-container">
-        <img class="2xl:w-80 md:w-60" src="{{ car.foto }}" alt="" />
+        <img loading="lazy" class="2xl:w-80 md:w-60" src="{{ car.foto }}" alt="" />
       </div>
       <div
         class="items-center justify-center flex xl:flex-col md:gap-10 sm:gap-0 xl:gap-0 text-left xl:flex-row sm:flex-col flex-col"

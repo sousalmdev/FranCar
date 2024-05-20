@@ -25,6 +25,8 @@ import { VehicleGradeComponent } from './vehicle-grade/vehicle-grade.component';
 import { DetailsComponent } from './details/details.component';
 import { BuyingCarComponent } from './buying-car/buying-car.component';
 import { SearchAreaComponent } from './search-area/search-area.component';
+import { ThanksComponent } from './thanks/thanks.component';
+import { LoadingScreenComponent } from './loading-screen/loading-screen.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,8 @@ import { SearchAreaComponent } from './search-area/search-area.component';
     DetailsComponent,
     BuyingCarComponent,
     SearchAreaComponent,
+    ThanksComponent,
+    LoadingScreenComponent,
   ],
   imports: [
     BrowserModule,
