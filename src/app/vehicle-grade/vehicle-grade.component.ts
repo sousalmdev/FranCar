@@ -19,12 +19,22 @@ export class VehicleGradeComponent implements OnInit {
   }
 
   search(query: string): void {
+  const searchResults = this.vehicleData.carros.filter((car: any) => {
+    let carName = car.modelo + car.marca;
+    return carName.toLowerCase().includes(query.toLowerCase());
+  });
+  
+  this.router.navigateByUrl(`home/search/${query}`);
+}
+
+/* search(query: string): void {
     const searchResults = this.vehicleData.carros.filter((car:any) =>
       car.modelo.toLowerCase().includes(query) || car.marca.toLowerCase().includes(query)
     );
     this.router.navigateByUrl(`home/search/${query}`);
   }
-
+*/
+  
   navToDetails(id: number): void {
     this.router.navigateByUrl(`home/details/${id}`);
   }
