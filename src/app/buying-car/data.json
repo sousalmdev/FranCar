@@ -72,7 +72,7 @@
     "modelo": "250 GTO",
     "ano": 1962,
     "cor": "Vermelho",
-    "preco": "R$250.000.000",
+    "preco": "R$ 250.000.000",
     "motor": "3.0L V12",
     "ficha": "A Ferrari 250 GTO e uma lenda entre os carros clássicos, conhecida por sua beleza estonteante e desempenho excepcional nas pistas."
   },
@@ -332,7 +332,7 @@
   },
   {
     "id": 31,
-    "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+    "foto": "https://preview.free3d.com/img/2020/05/2399391059613320331/dvvzio7d.jpg",
     "marca": "Pininfarina",
     "modelo": "Battista",
     "ano": 2024,
@@ -343,7 +343,7 @@
   },
   {
     "id": 32,
-    "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+    "foto": "https://visioncomex.com/wp-content/uploads/2023/02/lucid-air-grand-touring-2022-branco.png",
     "marca": "Lucid",
     "modelo": "Air",
     "ano": 2024,
@@ -354,7 +354,7 @@
   },
   {
     "id": 33,
-    "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+    "foto": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/52680/2023-Polestar-2-front_52680_032_2400x1800_707.png",
     "marca": "Polestar",
     "modelo": "2",
     "ano": 2024,
@@ -365,7 +365,7 @@
   },
   {
     "id": 34,
-    "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+    "foto": "https://cdn.saabre.com/uploads/public/617/d77/abc/617d77abc8f0c433730841.png",
     "marca": "NIO",
     "modelo": "ES8",
     "ano": 2024,
@@ -376,7 +376,7 @@
   },
   {
     "id": 35,
-    "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+    "foto": "https://www.lugenergy.com/imagenes//2024/01/punto-recarga-byton-m-byte-600x389.png",
     "marca": "Byton",
     "modelo": "M-Byte",
     "ano": 2024,
@@ -387,7 +387,7 @@
   },
   {
     "id": 36,
-    "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+    "foto": "https://www.motortrend.com/uploads/sites/10/2022/07/2022-rivian-r1t-adventure-4wd-crew-truck-angular-front.png",
     "marca": "Rivian",
     "modelo": "R1T",
     "ano": 2024,
@@ -398,7 +398,7 @@
   },
   {
     "id": 37,
-    "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+    "foto": "https://images.ctfassets.net/ig8jw6ehfazm/4clHBklWg1VEZenSHwAzPG/5834bdf30014fa13632439f97d5c391d/home-life-v5-c.png?w=1000&h=726&q=50&fm=png&bg=white",
     "marca": "Canoo",
     "modelo": "Lifestyle Vehicle",
     "ano": 2024,
@@ -409,7 +409,7 @@
   },
   {
     "id": 38,
-    "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+    "foto": "https://www.arabnews.com/sites/default/files/styles/n_670_395/public/2022/01/16/3018726-1452510228.png?itok=hH5Dp0fZ",
     "marca": "Sony",
     "modelo": "Vision-S",
     "ano": 2024,
@@ -420,7 +420,7 @@
   },
   {
     "id": 39,
-    "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+    "foto": "https://www.gmccanada.ca/content/dam/gmc/na/ca/en/index/electric/hummer-ev-pickup/01-images/2024-hummer-ev-suv-edition1-moonshot-metallic-g7w-NAV.png?imwidth=960",
     "marca": "Hummer",
     "modelo": "EV",
     "ano": 2024,
@@ -431,7 +431,7 @@
   },
   {
     "id": 40,
-    "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+    "foto": "https://vrrb-fsb-prod-backend.s3.us-west-1.amazonaws.com/strapi/SF_90_Stradale_Thumb_500a464bf7.png",
     "marca": "Ferrari",
     "modelo": "SF90 Stradale",
     "ano": 2024,
@@ -442,7 +442,7 @@
   },
   {
     "id": 41,
-    "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+    "foto": "https://di-uploads-pod42.dealerinspire.com/southparknissan/uploads/2023/11/2024-nissan-altima-main.png",
     "marca": "Nissan",
     "modelo": "Altima",
     "ano": 2024,
@@ -453,7 +453,7 @@
   },
   {
     "id": 42,
-    "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+    "foto": "https://revistacarro.com.br/wp-content/uploads/2018/05/hyundai_santa_fe.png",
     "marca": "Hyundai",
     "modelo": "Santa Fe",
     "ano": 2024,
@@ -464,7 +464,7 @@
   },
   {
     "id": 43,
-    "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+    "foto": "https://prod.cdn.secureoffersites.com/images/oem/subaru/2023-subaru-outback-launch/MY23_OBK_LimitedXT_m_PDJ_OP32_Crystal-Black-Silica.png",
     "marca": "Subaru",
     "modelo": "Outback",
     "ano": 2024,
@@ -475,7 +475,7 @@
   },
   {
     "id": 44,
-    "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+    "foto": "https://media-assets.mazda.eu/image/upload/q_auto,f_auto/mazdapt/globalassets/cars/2023-mazda-cx-5/clearcuts/mme_cx5_kdrkeaf_46v_7-8.png?rnd=492675",
     "marca": "Mazda",
     "modelo": "CX-5",
     "ano": 2024,
@@ -486,7 +486,7 @@
   },
   {
     "id": 45,
-    "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+    "foto": "https://alcf.s3.us-west-1.amazonaws.com/_custom/2024/jeep/wrangler/2024%20jeep%20wrangler%20%284%29.png",
     "marca": "Jeep",
     "modelo": "Wrangler",
     "ano": 2024,
@@ -497,7 +497,7 @@
   },
   {
     "id": 47,
-    "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+    "foto": "https://www.ram.com.br/content/dam/ram/products/575/2cm/p/2023/page/profile.webp",
     "marca": "RAM",
     "modelo": "1500",
     "ano": 2024,
@@ -508,7 +508,7 @@
   },
   {
     "id": 48,
-    "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+    "foto": "https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2024/suvs/tahoe/trims/2023-tahoe-cc10706-1lz-g1w-trimselector.png?imwidth=960",
     "marca": "Chevrolet",
     "modelo": "Tahoe",
     "ano": 2024,
@@ -519,7 +519,7 @@
   },
   {
     "id": 49,
-    "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+    "foto": "https://www.webmotors.com.br/imagens/prod/348874/GMC_YUKON_6.2_V8_ECOTEC3_FLEXFUEL_XL_DENALI_4WD_AUTOMATICO_34887413223832253.webp?s=fill&w=165&h=110&q=70&t=true",
     "marca": "GMC",
     "modelo": "Yukon",
     "ano": 2024,
@@ -530,7 +530,7 @@
   },
   {
     "id": 50,
-    "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+    "foto": "https://pictures.dealer.com/p/powercdjcllc/1419/bc6c256ee89eef566676834346c3a452x.jpg?impolicy=downsize&w=568",
     "marca": "Dodge",
     "modelo": "Charger",
     "ano": 2024,
@@ -541,7 +541,7 @@
   },
   {
     "id": 51,
-    "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+    "foto": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/53502/2024-Lincoln-Navigator-front_53502_032_1837x885_XF_cropped.png",
     "marca": "Lincoln",
     "modelo": "Navigator",
     "ano": 2024,
@@ -552,7 +552,7 @@
   },
   {
     "id": 52,
-    "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+    "foto": "https://inv.assets.ansira.net/ChromeColorMatch/us/TRANSPARENT_cc_2024CAS010013_01_1280_GNT.png",
     "marca": "Cadillac",
     "modelo": "Escalade",
     "ano": 2024,
@@ -563,7 +563,7 @@
   },
   {
     "id": 53,
-    "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+    "foto": "https://www.acura.ca/-/media/Brands/Acura/Models/MDX/2023/Model-Page/Overview/Key-Features/acura-my22overview-greyMDX_keyFeatures_d_blueMDXFront.png?h=584&iar=0&w=1036&rev=1dd68bbc21a143a2b649ce15721f642e&hash=E0713A3C16617F341324097BEB0DB462",
     "marca": "Acura",
     "modelo": "MDX",
     "ano": 2024,
@@ -574,7 +574,7 @@
   },
   {
     "id": 54,
-    "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+    "foto": "https://inv.assets.ansira.net/ChromeColorMatch/us/TRANSPARENT_cc_2024INS180002_01_1280_BW5.png",
     "marca": "Infiniti",
     "modelo": "QX80",
     "ano": 2024,
@@ -585,7 +585,7 @@
   },
   {
     "id": 55,
-    "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+    "foto": "https://di-uploads-pod36.dealerinspire.com/foxvalleybuickgmc/uploads/2023/08/24Buick-Enclave-Essence-EmperorBlue-Jellybean.png",
     "marca": "Buick",
     "modelo": "Enclave",
     "ano": 2024,
@@ -596,7 +596,7 @@
   },
   {
     "id": 56,
-    "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+    "foto": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/54292/2024-Kia-Sorento-front_54292_032_1818x872_EB_cropped.png",
     "marca": "Kia",
     "modelo": "Sorento",
     "ano": 2024,
@@ -607,7 +607,7 @@
   },
   {
     "id": 57,
-    "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+    "foto": "https://production.autoforce.com/uploads/version/profile_image/9587/comprar-plus_9a460c47c1.png",
     "marca": "Volvo",
     "modelo": "XC90",
     "ano": 2024,
@@ -618,7 +618,7 @@
   },
   {
     "id": 58,
-    "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+    "foto": "https://production.autoforce.com/uploads/version/profile_image/9777/model_middle_webp_comprar-hpe_fbcf9564b0.png.webp",
     "marca": "Mitsubishi",
     "modelo": "Pajero Sport",
     "ano": 2024,
@@ -629,7 +629,7 @@
   },
   {
     "id": 59,
-    "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+    "foto": "https://www.suzukiveiculos.com.br/wp-content/uploads/2023/10/Jimny_Sierra_4YOU_AZUL_00002-1-1.png",
     "marca": "Suzuki",
     "modelo": "Jimny",
     "ano": 2024,
@@ -640,7 +640,7 @@
   },
   {
     "id": 60,
-    "foto": "O Chevrolet Camaro 2022 e equipado com um motor V8 6.2L, proporcionando uma conducão empolgante e uma presenca marcante na estrada.",
+    "foto": "https://renegade.jeep.com.br/content/dam/jeep/products/611/1jg/1/2024/page/hero.webp",
     "marca": "Jeep",
     "modelo": "Renegade",
     "ano": 2024,

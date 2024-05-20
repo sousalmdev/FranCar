@@ -13,18 +13,25 @@
           >
         </h1>
         <h2
-          class="xl:text-3xl text-base xl:w-3/5 xl:text-left text-center mt-2 text-gray-800 font-light"
+          class="xl:text-3xl sm:text-xl text-base 2xl:w-4/5 xl:w-4/5 md:w-3/5 xl:mx-0 md:m-auto md:mt-3   xl:text-left text-center text-center mt-5 text-gray-800 font-light"
         >
-          com FranCar, seu sonho do carro novo está a uns pouquíssimos cliques
+          Com FranCar, seu sonho do carro novo está a uns pouquíssimos cliques
           de distância. Entre e aproveite as ofertas, com as melhores condições
           de todo o mercado!
         </h2>
+        <button
+      (click)="goHome()"
+      class="w-11/12 text-center xl:flex hidden text-white mt-10 shadow-md hover:bg-white items-center justify-center hover:text-red-600 flex  bg-red-600 p-4 font-black rounded-md text-4xl transition-all"
+      type="button"
+    >
+      Quero Conhecer!
+    </button>
       </div>
-      <img [src]="myImage" class="2xl:w-1/2" alt="" />
+      <img [src]="myImage" class="md:w-1/2 w-2/3" alt="" />
     </section>
     <button
       (click)="goHome()"
-      class="text-white mt-10 shadow-md hover:bg-white hover:text-red-600 flex self-center bg-red-600 p-4 font-black rounded-md xl:text-2xl text-xl transition-all"
+      class="text-white mt-10 xl:hidden flex shadow-md hover:bg-white hover:text-red-600 flex self-center bg-red-600 p-4 font-black rounded-md xl:text-2xl text-xl transition-all"
       type="button"
     >
       Quero Conhecer!
