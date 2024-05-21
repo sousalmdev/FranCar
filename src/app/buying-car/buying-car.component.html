@@ -1,4 +1,4 @@
-<body class="text-white h-max bg-white/80 pt-20">
+<body class="text-white h-max  pt-20">
   <main
     class="py-20 min-h-screen flex items-center 2xl:justify-start justify-center flex-col"
   >
@@ -11,7 +11,7 @@
         <h2 class="2xl:text-4xl text-2xl font-semibold text-center">
           Você está adquirindo:
           <br />
-          <span class="font-black text-red-600 mt-2">
+          <span class="font-black text-blue-600 mt-2">
             {{ car.marca.toUpperCase() }} {{ car.modelo.toUpperCase() }} {{ car.ano }}</span
           >
         </h2>
@@ -20,7 +20,7 @@
             class="2xl:text-2xl h-16 items-center  md:w-1/2 sm:w-11/12 w-11/12 flex text-xl shadow-md font-normal text-center my-10 bg-black rounded-md text-black"
           >
         <span
-          class="bg-red-600 w-7 h-full text-red-600 relative left-0 rounded-e-3xl rounded-s-md"
+          class="bg-blue-600 w-7 h-full text-blue-600 relative left-0 rounded-e-3xl rounded-s-md"
           >.</span
         >
         <h2
@@ -37,7 +37,7 @@
           <div class="flex flex-col mb-4">
             <label for="nome" class="2xl:text-lg text-sm mb-1">Nome:</label>
             <input
-              required
+              requiblue
               type="text"
               id="nome"
               name="nome"
@@ -49,7 +49,7 @@
               >Endereço:</label
             >
             <input
-              required
+              requiblue
               type="text"
               id="endereco"
               name="endereco"
@@ -59,7 +59,7 @@
           <div class="flex flex-col mb-4">
             <label for="email" class="2xl:text-lg text-sm mb-1">E-mail:</label>
             <input
-              required
+              requiblue
               type="email"
               id="email"
               name="email"
@@ -68,7 +68,7 @@
           </div>
           <button
             type="submit"
-            class=" px-4 py-3 flex items-center justify-center gap-2 transition-all hover:scale-100 hover:shadow-2xl text-white bg-red-600 2xl:text-4xl text-xl font-black rounded-md shadow-md group"
+            class=" px-4 py-3 flex items-center justify-center gap-2 transition-all hover:scale-100 hover:shadow-2xl text-white bg-blue-600 2xl:text-4xl text-xl font-black rounded-md shadow-md group"
           >
             CONFIRMAR COMPRA
             <span
