@@ -6,7 +6,7 @@
       class="2xl:w-5/12 w-full 2xl:border 2xl:shadow rounded flex flex-col items-center justify-center"
     >
       <div class="flex flex-col items-center py-10 bg-black text-white">
-        <div class="flex flex-col items-center text-black justify-center p-5">
+        <div class="flex flex-col items-center text-white justify-center p-5">
           <div class="flex flex-col mb-6">
             <h2 class="text-center sm:text-6xl text-3xl font-semibold">
               {{ car.marca.toUpperCase() }}
@@ -18,7 +18,7 @@
           <img src="{{ car.foto }}" alt="" class="" />
 
           <p
-            class="md:text-3xl sm:text-xl text-base text-white/80 font-light sm:text-left text-center 2xl:w-11/12 sm:w-3/4 w-11/12 my-4"
+            class="md:text-3xl sm:text-xl text-base text-white font-light sm:text-left text-center 2xl:w-11/12 sm:w-3/4 w-11/12 my-4"
           >
             {{ car.ficha }}
           </p>
@@ -28,7 +28,7 @@
             <div
               class="sm:text-2xl text-base flex items-center text-center text-white font-semibold p-3 rounded-md shadow-md"
             >
-              <div class="flex flex-col items-center text-black justify-center">
+              <div class="flex flex-col items-center text-white justify-center">
                 <h3>Lançamento:</h3>
                 <h3 class="font-black text-green-500">
                   {{ car.ano }}
@@ -38,7 +38,7 @@
             <div
               class="sm:text-2xl text-base flex p-3 items-center text-center text-white font-semibold rounded-md shadow-md"
             >
-              <div class="flex items-center text-black justify-center">
+              <div class="flex items-center text-white justify-center">
                 <h3>
                   Motor:
                   <br />
