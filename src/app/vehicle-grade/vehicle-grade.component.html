@@ -21,7 +21,7 @@
         <div class="mt-5 flex items-center gap-2">
           <input
             placeholder="Digite a marca/modelo do carro"
-            class="placeholder:font-semibold w-10/12 self-start active:border-black active:border-4 p-3 border rounded-md"
+            class="placeholder:font-semibold w-10/12 text-black self-start active:border-black active:border-4 p-3 border rounded-md"
             type="search"
             name="search"
             id="searchInput"
@@ -48,13 +48,13 @@ Nossas principais
     </div>
 
     <section
-      class="border bg-white text-black shadow-xl w-11/12 xl:w-2/3 md:flex-row flex-col flex items-center justify-evenly p-4 rounded-lg"
+      class=" bg-white/20 text-white shadow-xl w-11/12 xl:w-2/3 md:flex-row flex-col flex items-center justify-evenly p-4 rounded-lg"
       *ngFor="let car of displayedCars"
     >
       <div class="img-container">
         <img
           loading="lazy"
-          class="2xl:w-80 md:w-60"
+          class="2xl:w-80 h-fit md:w-60"
           src="{{ car.foto }}"
           alt=""
         />
@@ -67,17 +67,17 @@ Nossas principais
             class="xl:text-4xl md:text-3xl sm:text-3xl md:text-left text-center text-xl mb-2 font-light"
           >
             {{ car.marca.toUpperCase() }} <br class="xl:block hidden" /><span
-              class="font-black xl:text-4xl md:text-3xl sm:text-3xl text-xl text-black"
+              class="font-black xl:text-4xl md:text-3xl sm:text-3xl text-xl text-white"
               >{{ car.modelo.toUpperCase() }}</span
             >
           </h2>
           <h1
-            class="2xl:text-4xl sm:text-4xl text-2xl font-black text-blue-500 underline decoration-black 2xl:text-left xl:text-left md:text-left sm:text-center text-center"
+            class="2xl:text-4xl sm:text-4xl text-2xl font-black text-green-500 underline decoration-black 2xl:text-left xl:text-left md:text-left sm:text-center text-center"
           >
             {{ car.preco }}
           </h1>
           <h3
-            class="md:text-2xl sm:text-2xl md:text-left text-center my-2 font-semibold text-black/70"
+            class="md:text-2xl sm:text-2xl md:text-left text-center my-2 font-semibold text-white/70"
           >
             {{ car.motor }} {{ car.ano }}
           </h3>
@@ -85,12 +85,12 @@ Nossas principais
       </div>
       <div class="md:mt-0 mt-5">
         <button
-          class="font-bold 2xl:p-3 py-1 px-3 2xl:w-56 w-full  flex items-center justify-center bg-blue-500 text-white shadow  transition-all rounded-md 2xl:text-2xl text-base"
+          class="font-bold 2xl:p-3 py-1 px-3 2xl:w-56 w-full  flex items-center justify-center bg-transparent border text-white shadow  transition-all rounded-md 2xl:text-2xl text-base"
           (click)="navToDetails(car.id)"
         >
           Mais Detalhes
           <span class="self-center pr-4 pl-2 w-4 mt-2"
-            ><mat-icon>zoom_in </mat-icon></span
+            ><mat-icon>keyboard_arrow_right </mat-icon></span
           >
         </button>
       </div>

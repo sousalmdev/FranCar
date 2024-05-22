@@ -10,7 +10,7 @@
           <div class="flex flex-col mb-6">
             <h2 class="text-center sm:text-6xl text-3xl font-semibold">
               {{ car.marca.toUpperCase() }}
-              <span class="font-black text-blue-500">{{
+              <span class="font-black text-green-500">{{
                 car.modelo.toUpperCase()
               }}</span>
             </h2>
@@ -30,7 +30,7 @@
             >
               <div class="flex flex-col items-center text-black justify-center">
                 <h3>Lançamento:</h3>
-                <h3 class="font-black text-blue-500">
+                <h3 class="font-black text-green-500">
                   {{ car.ano }}
                 </h3>
               </div>
@@ -42,7 +42,7 @@
                 <h3>
                   Motor:
                   <br />
-                  <span class="w-full font-black text-blue-500">
+                  <span class="w-full font-black text-green-500">
                     {{ car.motor }}
                   </span>
                 </h3>
@@ -53,7 +53,7 @@
             class="2xl:text-2xl h-16 items-center md:w-1/2 sm:w-11/12 w-11/12 flex text-xl shadow-md font-normal text-center my-10 bg-black rounded-md text-black"
           >
             <span
-              class="bg-blue-500 w-7 h-full text-blue-500 relative left-0 rounded-e-3xl rounded-s-md"
+              class="bg-green-500 w-7 h-full text-green-500 relative left-0 rounded-e-3xl rounded-s-md"
               >.</span
             >
             <h2 class="m-auto text-white text-center px-1 self-center">
@@ -65,7 +65,7 @@
         <button
           (click)="buyCar(car.id)"
           type="button"
-          class="2xl:w-1/2 w-10/12 px-4 py-3 flex items-center justify-center gap-2 transition-all hover:scale-100 hover:shadow-2xl text-white bg-blue-500 2xl:text-4xl text-3xl font-black rounded-md shadow-md group"
+          class="2xl:w-1/2 w-10/12 px-4 py-3 flex items-center justify-center gap-2 transition-all hover:scale-100 hover:shadow-2xl text-white bg-green-500 2xl:text-4xl text-3xl font-black rounded-md shadow-md group"
         >
           COMPRAR
           <span
