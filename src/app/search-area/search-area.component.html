@@ -1,13 +1,13 @@
-<body class="p-5">
+<body class="bg-default h-max p-5">
   <main class="py-24 flex flex-col items-center gap-10">
-    <h1 class="font-black text-blue-600 2xl:text-5xl text-2xl text-center">
+    <h1 class="font-black text-green-500 2xl:text-5xl text-2xl text-center">
       <span class="font-semibold">Resultados para</span>
       "{{ query.toUpperCase() }}"
     </h1>
 
 
       <mat-form-field class="2xl:w-1/4 sm:w-1/2 text-red-600 w-11/12 " >
-        <mat-label class="text-blue-600">Ordenar por:</mat-label>
+        <mat-label class="text-green-500">Ordenar por:</mat-label>
         <mat-select (selectionChange)="onSortChange($event)"
         >
         <mat-option value="marcaAsc">Nenhum</mat-option>
@@ -17,7 +17,7 @@
       </mat-form-field>
 
       <section
-      class="border border-slate-200 bg-white text-black shadow-xl w-11/12 xl:w-2/3 md:flex-row flex-col flex items-center justify-evenly p-4 rounded-lg"
+      class=" bg-black text-white shadow-xl w-11/12 xl:w-2/3 md:flex-row flex-col flex items-center justify-evenly p-4 rounded-lg"
       *ngFor="let car of displayedCars"
     >
       <div class="img-container">
@@ -31,16 +31,16 @@
             class="xl:text-4xl md:text-3xl sm:text-3xl md:text-left text-center text-xl mb-2 font-light"
           >
             {{ car.marca.toUpperCase() }} <br class="xl:block hidden" /><span
-              class="font-black xl:text-4xl md:text-3xl sm:text-3xl text-xl text-blue-600"
+              class="font-black xl:text-4xl md:text-3xl sm:text-3xl text-xl text-green-500"
               >{{ car.modelo.toUpperCase() }}</span
             >
           </h2>    <h1
-          class="2xl:text-4xl sm:text-4xl text-2xl font-black text-black  underline decoration-slate-700 2xl:text-left xl:text-left md:text-left  sm:text-center text-center"
+          class="2xl:text-4xl sm:text-4xl text-2xl font-black text-green-500  underline decoration-black 2xl:text-left xl:text-left md:text-left  sm:text-center text-center"
         >
           {{ car.preco }}
         </h1>
           <h3
-            class="md:text-2xl sm:text-2xl md:text-left text-center my-2 font-semibold text-black/70"
+            class="md:text-2xl sm:text-2xl md:text-left text-center my-2 font-semibold text-white/70"
           >
             {{ car.motor }} {{ car.ano }}
           </h3>
@@ -49,7 +49,7 @@
       </div>
       <div class="md:mt-0 mt-5">
         <button
-          class="font-bold 2xl:p-3 py-1 px-3 2xl:w-56 w-full bg-slate-700/70 flex items-center justify-center text-white hover:bg-slate-700 transition-all rounded-md 2xl:text-2xl text-base"
+          class="font-bold 2xl:p-3 py-1 px-3 2xl:w-56 w-full bg-white flex items-center justify-center text-black transition-all rounded-full 2xl:text-2xl text-base"
           (click)="navToDetails(car.id)"
         >
           Mais Detalhes
