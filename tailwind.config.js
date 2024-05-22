@@ -12,6 +12,9 @@ module.exports = {
       animation: {
         'fade-up': 'fade-up 1s ease-out',
       },
+    colors: {
+        "default":"#171717",
+        },
     },
   },
   plugins: [],
