@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component,ViewChild } from '@angular/core';
 import { Router,NavigationStart,NavigationEnd } from '@angular/router';
-import { LoadingScreenComponent } from './loading-screen/loading-screen.component';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,6 +9,8 @@ import { LoadingScreenComponent } from './loading-screen/loading-screen.componen
 export class AppComponent {
   title = 'FranCar';
   isLoading: boolean = false;
+
+
 
   constructor(private router: Router) {
     this.router.events.subscribe(event => {

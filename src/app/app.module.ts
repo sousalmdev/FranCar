@@ -7,12 +7,11 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import { MatDialogModule } from '@angular/material/dialog';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatPaginatorModule } from '@angular/material/paginator';
-
+import { MatListModule } from '@angular/material/list';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -52,7 +51,7 @@ import { LoadingScreenComponent } from './loading-screen/loading-screen.componen
     MatFormFieldModule,
     MatPaginatorModule,
     MatMenuModule,
-    MatExpansionModule
+    MatExpansionModule,MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent],

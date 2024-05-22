@@ -1,7 +1,5 @@
-import { Component } from '@angular/core';
-import { MatInput } from '@angular/material/input';
-import { MatIcon } from '@angular/material/icon';
-import { MatMenu } from '@angular/material/menu';
+import { Component} from '@angular/core';
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -9,7 +7,4 @@ import { MatMenu } from '@angular/material/menu';
 export class HeaderComponent {
   showSearchInput: boolean = false;
 
-  toggleSearchInput() {
-    this.showSearchInput = !this.showSearchInput;
-  }
 }
