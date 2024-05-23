@@ -50,12 +50,12 @@
     >
       <ng-template pTemplate="item" let-brand>
         <div
-          class="flex text-black flex-col items-center justify-center h-72 {{
+          class="flex text-black  border-2  flex-col items-center justify-center h-72 {{
             brand.bg
           }}  bg-cover bg-center  shadow-md "
         >
           <div
-            class="h-72 w-full flex items-center gap-6 flex-col bg-black/70 backdrop-blur-sm p-6"
+            class="h-72 w-full flex items-center gap-6 flex-col bg-black/70 hover:bg-gradient-to-b from-transparent to-black backdrop-blur-sm p-6"
           >
             <img
               [src]="brand.logo"
@@ -87,7 +87,7 @@
     </div>
 
     <section
-      class="bg-black text-white shadow-xl w-11/12 xl:w-2/3 md:flex-row flex-col flex items-center justify-evenly p-4 rounded-lg"
+      class="bg-black text-white border border white/20 shadow-xl w-11/12 xl:w-2/3 md:flex-row flex-col flex items-center justify-evenly p-4 rounded-lg"
       *ngFor="let car of displayedCars"
     >
       <div class="img-container">
