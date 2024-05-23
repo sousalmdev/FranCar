@@ -1,6 +1,4 @@
 <body class="p-5 h-max bg-default">
-
-
   <main class="py-24 flex flex-col items-center gap-10">
     <div
       id="presentation"
@@ -8,9 +6,8 @@
     >
       <h1 class="font-black text-white 2xl:text-5xl text-2xl text-center">
         <span class="font-light text-white"
-          >O que podemos fazer por você
-
-        hoje? </span>
+          >O que podemos fazer por você hoje?
+        </span>
       </h1>
       <div
         class="mt-10 2xl:p-10 p-3 text-white flex justify-center flex-col bg-black shadow-md w-full rounded-md"
@@ -37,18 +34,60 @@
         </div>
       </div>
     </div>
+    <h1 class="font-black text-white 2xl:text-5xl text-2xl text-center">
+      <span class="font-light text-white"
+        >Procure pelos
+        <span class="font-black text-green-500">mais populares</span></span
+      >
+    </h1>
+    <p-carousel
+      class="2xl:w-2/3 w-full text-white"
+      [value]="carBrands"
+      [numVisible]="1"
+      [numScroll]="1"
+      [circular]="false"
+      [autoplayInterval]="5000"
+    >
+      <ng-template pTemplate="item" let-brand>
+        <div
+          class="flex text-black flex-col items-center justify-center h-72 {{
+            brand.bg
+          }}  bg-cover bg-center  shadow-md "
+        >
+          <div
+            class="h-72 w-full flex items-center gap-6 flex-col bg-black/70 backdrop-blur-sm p-6"
+          >
+            <img
+              [src]="brand.logo"
+              alt="{{ brand.name }} logo"
+              class="w-32 mb-4"
+            />
+            <h3
+              class="text-lg font-semibold text-green-500 2xl:text-5xl text-2xl text-center"
+            >
+              <span class="font-light text-white">{{ brand.desc }}</span>
+              {{ brand.name }}
+            </h3>
+            <a href="{{ brand.url }}"
+              ><button
+                class="p-2 rounded-full bg-white text-black flex items-center"
+              >
+                Saber Mais <mat-icon>keyboard_arrow_right</mat-icon>
+              </button></a
+            >
+          </div>
+        </div>
+      </ng-template>
+    </p-carousel>
 
     <div class="2xl:w-2/3 w-11/12">
-      <h1
-        class="font-light text-white 2xl:text-5xl text-2xl text-center"
-      >
-Nossas principais
-        Ofertas:
+      <h1 class="font-light text-white 2xl:text-5xl text-2xl text-center">
+        Nossas principais Ofertas:
       </h1>
     </div>
 
     <section
-      class=" bg-black text-white shadow-xl w-11/12 xl:w-2/3 md:flex-row flex-col flex items-center justify-evenly p-4 rounded-lg"
+      class="bg-black text-white shadow-xl w-11/12 xl:w-2/3 md:flex-row flex-col flex items-center justify-evenly p-4 rounded-lg"
       *ngFor="let car of displayedCars"
     >
       <div class="img-container">
@@ -85,7 +124,7 @@ Nossas principais
       </div>
       <div class="md:mt-0 mt-5">
         <button
-          class="font-bold 2xl:p-3 py-1 px-3 2xl:w-56 w-full  flex items-center justify-center bg-white text-black shadow  transition-all rounded-full 2xl:text-2xl text-base"
+          class="font-bold 2xl:p-3 py-1 px-3 2xl:w-56 w-full flex items-center justify-center bg-white text-black shadow transition-all rounded-full 2xl:text-2xl text-base"
           (click)="navToDetails(car.id)"
         >
           Mais Detalhes

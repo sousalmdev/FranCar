@@ -1,9 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-loading-screen',
   templateUrl: './loading-screen.component.html',
 })
-export class LoadingScreenComponent {
-
-}
+export class LoadingScreenComponent {}

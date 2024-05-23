@@ -1,8 +1,8 @@
-import { NgModule} from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import {MatSnackBarModule} from '@angular/material/snack-bar';
-import {MatExpansionModule} from '@angular/material/expansion';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
@@ -12,7 +12,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatListModule } from '@angular/material/list';
-
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,6 +25,8 @@ import { BuyingCarComponent } from './buying-car/buying-car.component';
 import { SearchAreaComponent } from './search-area/search-area.component';
 import { ThanksComponent } from './thanks/thanks.component';
 import { LoadingScreenComponent } from './loading-screen/loading-screen.component';
+import { CarouselModule } from 'primeng/carousel';
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,10 @@ import { LoadingScreenComponent } from './loading-screen/loading-screen.componen
     MatFormFieldModule,
     MatPaginatorModule,
     MatMenuModule,
-    MatExpansionModule,MatListModule
+    MatExpansionModule,
+    MatListModule,
+    CarouselModule,
+    ButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

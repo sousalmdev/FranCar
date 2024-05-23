@@ -1,4 +1,4 @@
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import vehicleData from 'src/app/vehicle-grade/data.json';
 import { Router } from '@angular/router';
 import { MatSidenav } from '@angular/material/sidenav';
@@ -12,6 +12,29 @@ export class VehicleGradeComponent implements OnInit {
   displayedCars: any[] = [];
   totalCars: number = 0;
 
+  carBrands = [
+    {
+      name: 'Ford',
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ford_logo_flat.svg/2560px-Ford_logo_flat.svg.png',
+      url: 'home/search/ford',
+      bg: 'bg-ford',
+      desc: 'Os robustos e Econômicos da',
+    },
+    {
+      name: 'Chevrolet',
+      logo: 'https://logosmarcas.net/wp-content/uploads/2021/04/Chevrolet-Logo.png',
+      url: 'home/search/chevrolet',
+      bg: 'bg-chevy',
+      desc: 'Os ousados e adaptáveis da',
+    },
+    {
+      name: 'Mitsubishi',
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Mitsubishi-logo.png/1200px-Mitsubishi-logo.png',
+      url: 'home/search/mitsubishi',
+      bg: 'bg-mitsu',
+      desc: 'Os luxuosos e baratos da',
+    },
+  ];
   constructor(private router: Router) {}
 
   ngOnInit(): void {
@@ -19,16 +42,15 @@ export class VehicleGradeComponent implements OnInit {
     this.displayedCars = this.vehicleData.carros.slice(0, 10);
   }
 
-
-
-search(query: string): void {
-    const searchResults = this.vehicleData.carros.filter((car:any) =>
-      car.modelo.toLowerCase().includes(query) || car.marca.toLowerCase().includes(query)
+  search(query: string): void {
+    const searchResults = this.vehicleData.carros.filter(
+      (car: any) =>
+        car.modelo.toLowerCase().includes(query) ||
+        car.marca.toLowerCase().includes(query)
     );
     this.router.navigateByUrl(`home/search/${query}`);
-    return  searchResults
+    return searchResults;
   }
-
 
   navToDetails(id: number): void {
     this.router.navigateByUrl(`home/details/${id}`);
