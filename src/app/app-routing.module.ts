@@ -8,6 +8,7 @@ import { SearchAreaComponent } from './search-area/search-area.component';
 import { ThanksComponent } from './thanks/thanks.component';
 import { LoadingGuard } from './loading-screen/loading.guard';
 import { LoadingScreenComponent } from './loading-screen/loading-screen.component';
+import { ClassicsComponent } from './classics/classics.component';
 const routes: Routes = [
   { path: '', component: FirstScreenComponent },
   {
@@ -31,7 +32,11 @@ const routes: Routes = [
     canActivate: [LoadingGuard],
   },
   { path: 'thanks', component: ThanksComponent, canActivate: [LoadingGuard] },
-  { path: 'loadTest', component: LoadingScreenComponent },
+  {
+    path: 'classics',
+    component: ClassicsComponent,
+    canActivate: [LoadingGuard],
+  },
 ];
 
 @NgModule({

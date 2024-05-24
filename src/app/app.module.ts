@@ -12,7 +12,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatListModule } from '@angular/material/list';
-
+import { PanelMenuModule } from 'primeng/panelmenu';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -27,6 +27,7 @@ import { ThanksComponent } from './thanks/thanks.component';
 import { LoadingScreenComponent } from './loading-screen/loading-screen.component';
 import { CarouselModule } from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';
+import { ClassicsComponent } from './classics/classics.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { ButtonModule } from 'primeng/button';
     SearchAreaComponent,
     ThanksComponent,
     LoadingScreenComponent,
+    ClassicsComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,6 +58,7 @@ import { ButtonModule } from 'primeng/button';
     MatListModule,
     CarouselModule,
     ButtonModule,
+    PanelMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent],

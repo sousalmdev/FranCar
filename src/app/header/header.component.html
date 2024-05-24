@@ -1,34 +1,43 @@
 <header
-  class="z-50 2xl:py-4 py-2 shadow-md fixed w-full bg-black border-b border-white/30  flex items-center justify-center"
+  class="z-50 2xl:py-4 py-2 shadow-md fixed w-full bg-black border-b border-white/30 flex items-center justify-center"
 >
-  <nav class="w-11/12 flex justify-between items-center" style="font-family: 'Poppins'">
+  <nav
+    class="w-11/12 flex justify-between items-center"
+    style="font-family: 'Poppins'"
+  >
     <a href="/home">
-      <img
-        src="assets/img/Component 54.svg"
-        alt="img"
-        class="2xl:w-24 w-16"
-      />
-</a>
-<img
-src="assets/img/FRANCAR.svg"
-alt="img"
-class="2xl:w-48 w-24"
-/>
+      <img src="assets/img/Component 54.svg" alt="img" class="2xl:w-24 w-16" />
+    </a>
+    <img src="assets/img/FRANCAR.svg" alt="img" class="2xl:w-48 w-24" />
 
-<button
-mat-icon-button
-[matMenuTriggerFor]="menu"
-aria-label="Example icon-button with a menu"
->
-<mat-icon class="text-white">menu</mat-icon>
-</button>
-<mat-menu #menu="matMenu">
-<a href="/home"><button mat-menu-item >
-  <mat-icon>home</mat-icon>
-  <span>Back to Home</span>
-</button>
-</a>
-</mat-menu>
+    <button
+      mat-icon-button
+      [matMenuTriggerFor]="menu"
+    >
+      <mat-icon class="text-white">menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <a href="/home"
+        ><button mat-menu-item>
+          <mat-icon>home</mat-icon>
+          <span>Voltar ao principal</span>
+        </button>
+      </a>
+      <a href="/contact"
+        ><button mat-menu-item>
+          <mat-icon>phone</mat-icon>
+          <span>Contato</span>
+        </button>
+      </a>
+
+      <a href="/"
+      ><button mat-menu-item>
+        <mat-icon>logout</mat-icon>
+        <span>Sair</span>
+      </button>
+    </a>
+
+
+    </mat-menu>
   </nav>
 </header>
-

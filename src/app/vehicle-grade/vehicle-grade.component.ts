@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import vehicleData from 'src/app/vehicle-grade/data.json';
+import vehicleData from 'src/json/data.json';
 import { Router } from '@angular/router';
 import { MatSidenav } from '@angular/material/sidenav';
 
@@ -8,8 +8,8 @@ import { MatSidenav } from '@angular/material/sidenav';
   templateUrl: './vehicle-grade.component.html',
 })
 export class VehicleGradeComponent implements OnInit {
-  vehicleData: any = vehicleData;
-  displayedCars: any[] = [];
+  vehicleData: any[] = vehicleData;
+  displayedCars: any;
   totalCars: number = 0;
 
   carBrands = [
@@ -19,6 +19,7 @@ export class VehicleGradeComponent implements OnInit {
       url: 'home/search/ford',
       bg: 'bg-ford',
       desc: 'Os robustos e Econômicos da',
+      width:'w-32'
     },
     {
       name: 'Chevrolet',
@@ -26,31 +27,49 @@ export class VehicleGradeComponent implements OnInit {
       url: 'home/search/chevrolet',
       bg: 'bg-chevy',
       desc: 'Os ousados e adaptáveis da',
+      width:'w-32'
     },
     {
-      name: 'Mitsubishi',
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Mitsubishi-logo.png/1200px-Mitsubishi-logo.png',
-      url: 'home/search/mitsubishi',
-      bg: 'bg-mitsu',
-      desc: 'Os luxuosos e baratos da',
+      name: 'Volkswagen',
+      logo: 'https://1000logos.net/wp-content/uploads/2019/12/Volkswagen-Logo-1978.png',
+      url: 'home/search/volkswagen',
+      bg: 'bg-volks',
+      desc: 'Os queridinhos da galera:',
+      width:'w-32'
     },
+    {
+      name: 'Fiat',
+      logo: 'https://i.pinimg.com/originals/27/5f/4b/275f4b05064a3c377cc23679979ef253.png',
+      url: 'home/search/fiat',
+      bg: 'bg-fiat',
+      desc: 'O melhor custo benefício:',
+      width:'w-32'
+    },
+    {
+      name: 'Clássicos',
+      logo: 'https://seeklogo.com/images/M/Maserati-logo-B1F381987A-seeklogo.com.png',
+      url: 'classics',
+      bg: 'bg-classics',
+      desc: 'Os sucessos mais antigos, os',
+      width:'w-12'
+    }
   ];
   constructor(private router: Router) {}
 
   ngOnInit(): void {
-    this.totalCars = this.vehicleData.carros.length;
-    this.displayedCars = this.vehicleData.carros.slice(0, 10);
+    this.totalCars = this.vehicleData.length;
+    this.displayedCars = this.vehicleData.slice(0, 10);
   }
 
   search(query: string): void {
-    const searchResults = this.vehicleData.carros.filter(
+    const searchResults = this.vehicleData.filter(
       (car: any) =>
         car.modelo.toLowerCase().includes(query) ||
         car.marca.toLowerCase().includes(query)
     );
     this.router.navigateByUrl(`home/search/${query}`);
-    return searchResults;
   }
+
 
   navToDetails(id: number): void {
     this.router.navigateByUrl(`home/details/${id}`);
@@ -59,6 +78,6 @@ export class VehicleGradeComponent implements OnInit {
   onPageChange(event: any): void {
     const startIndex = event.pageIndex * event.pageSize;
     const endIndex = startIndex + event.pageSize;
-    this.displayedCars = this.vehicleData.carros.slice(startIndex, endIndex);
+    this.displayedCars = this.vehicleData.slice(startIndex, endIndex);
   }
 }

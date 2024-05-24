@@ -1,27 +1,21 @@
 <body class="bg-default h-max p-5">
-  <main class="py-24 flex flex-col items-center gap-10">
-    <h1 class="font-black text-green-500 2xl:text-5xl text-2xl text-center">
-      <span class="font-semibold">Resultados para</span>
-      "{{ query.toUpperCase() }}"
+  <main class="py-36 flex flex-col items-center gap-10">
+    <div class="w-11/12 xl:w-2/3 text-yellow-400">
+    <h1 class="font-black  sticky p-4 2xl:text-5xl text-2xl text-center">
+       <span class="text-white font-light">Apreciem os</span> Clássicos!
     </h1>
-
-
-      <mat-form-field class="2xl:w-1/4 sm:w-1/2 text-red-600 w-11/12 " >
-        <mat-label class="text-green-500">Ordenar por:</mat-label>
-        <mat-select (selectionChange)="onSortChange($event)"
-        >
-        <mat-option value="marcaAsc">Nenhum</mat-option>
-          <mat-option value="anoAsc">Mais Recente</mat-option>
-          <mat-option value="anoDesc">Menos Recente</mat-option>
-        </mat-select>
-      </mat-form-field>
-
-      <section
-      class=" bg-black text-white border border-white/20 shadow-xl w-11/12 xl:w-2/3 md:flex-row flex-col flex items-center justify-evenly p-4 rounded-lg"
+</div>
+    <section
+      class="bg-black text-white border border-white/20 shadow-xl w-11/12 xl:w-2/3 md:flex-row flex-col flex items-center justify-evenly p-4 rounded-lg"
       *ngFor="let car of displayedCars"
     >
       <div class="h-72 flex justify-center items-center">
-        <img loading="lazy" class="2xl:w-80 md:w-60" src="{{ car.foto }}" alt="" />
+        <img
+          loading="lazy"
+          class="2xl:w-80 md:w-60"
+          src="{{ car.foto }}"
+          alt=""
+        />
       </div>
       <div
         class="items-center justify-center flex xl:flex-col md:gap-10 sm:gap-0 xl:gap-0 text-left xl:flex-row sm:flex-col flex-col"
@@ -34,18 +28,18 @@
               class="font-black xl:text-4xl md:text-3xl sm:text-3xl text-xl text-green-500"
               >{{ car.modelo.toUpperCase() }}</span
             >
-          </h2>    <h1
-          class="2xl:text-4xl sm:text-4xl text-2xl font-black text-green-500  underline decoration-black 2xl:text-left xl:text-left md:text-left  sm:text-center text-center"
-        >
-          {{ car.preco }}
-        </h1>
+          </h2>
+          <h1
+            class="2xl:text-4xl sm:text-4xl text-2xl font-black text-green-500 underline decoration-black 2xl:text-left xl:text-left md:text-left sm:text-center text-center"
+          >
+            {{ car.preco }}
+          </h1>
           <h3
             class="md:text-2xl sm:text-2xl md:text-left text-center my-2 font-semibold text-white/70"
           >
             {{ car.motor }} {{ car.ano }}
           </h3>
         </div>
-
       </div>
       <div class="md:mt-0 mt-5">
         <button
@@ -54,8 +48,7 @@
         >
           Mais Detalhes
           <span class="self-center pr-4 pl-2 w-4 mt-2"
-            ><mat-icon>keyboard_arrow_right
-            </mat-icon></span
+            ><mat-icon>keyboard_arrow_right </mat-icon></span
           >
         </button>
       </div>

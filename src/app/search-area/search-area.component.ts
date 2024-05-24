@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import {MatSelectChange, MatSelectModule, MatSelectTrigger} from '@angular/material/select';
 
-import * as data from '../buying-car/data.json';
+import * as data from 'src/json/data.json';
 import { MatMenu } from '@angular/material/menu';
 import { MatIcon } from '@angular/material/icon';
 import { MatIconButton } from '@angular/material/button';
