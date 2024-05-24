@@ -19,7 +19,7 @@ export class VehicleGradeComponent implements OnInit {
       url: 'home/search/ford',
       bg: 'bg-ford',
       desc: 'Os robustos e Econômicos da',
-      width:'w-32'
+      width: 'w-32',
     },
     {
       name: 'Chevrolet',
@@ -27,7 +27,7 @@ export class VehicleGradeComponent implements OnInit {
       url: 'home/search/chevrolet',
       bg: 'bg-chevy',
       desc: 'Os ousados e adaptáveis da',
-      width:'w-32'
+      width: 'w-32',
     },
     {
       name: 'Volkswagen',
@@ -35,7 +35,7 @@ export class VehicleGradeComponent implements OnInit {
       url: 'home/search/volkswagen',
       bg: 'bg-volks',
       desc: 'Os queridinhos da galera:',
-      width:'w-32'
+      width: 'w-32',
     },
     {
       name: 'Fiat',
@@ -43,7 +43,7 @@ export class VehicleGradeComponent implements OnInit {
       url: 'home/search/fiat',
       bg: 'bg-fiat',
       desc: 'O melhor custo benefício:',
-      width:'w-32'
+      width: 'w-32',
     },
     {
       name: 'Clássicos',
@@ -51,8 +51,8 @@ export class VehicleGradeComponent implements OnInit {
       url: 'classics',
       bg: 'bg-classics',
       desc: 'Os sucessos mais antigos, os',
-      width:'w-12'
-    }
+      width: 'w-12',
+    },
   ];
   constructor(private router: Router) {}
 
@@ -68,9 +68,18 @@ export class VehicleGradeComponent implements OnInit {
         car.marca.toLowerCase().includes(query)
     );
     this.router.navigateByUrl(`home/search/${query}`);
+
   }
 
-
+  onSearchKeyPress(event: KeyboardEvent): void {
+    if (event.key === 'Enter') {
+      const query = (event.target as HTMLInputElement).value.trim().toLowerCase();
+      if (query) {
+        this.search(query);
+      } else {
+      }
+    }
+  }
   navToDetails(id: number): void {
     this.router.navigateByUrl(`home/details/${id}`);
   }
