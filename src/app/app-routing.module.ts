@@ -9,7 +9,7 @@ import { ThanksComponent } from './thanks/thanks.component';
 import { LoadingGuard } from './loading-screen/loading.guard';
 import { LoadingScreenComponent } from './loading-screen/loading-screen.component';
 const routes: Routes = [
-  { path: '', component: FirstScreenComponent, canActivate: [LoadingGuard] },
+  { path: '', component: FirstScreenComponent },
   {
     path: 'home',
     component: VehicleGradeComponent,
