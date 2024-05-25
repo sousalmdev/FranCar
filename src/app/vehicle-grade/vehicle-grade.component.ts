@@ -50,7 +50,7 @@ export class VehicleGradeComponent implements OnInit {
       logo: 'https://seeklogo.com/images/M/Maserati-logo-B1F381987A-seeklogo.com.png',
       url: 'classics',
       bg: 'bg-classics',
-      desc: 'Os sucessos mais antigos, os',
+      desc: 'Os veteranos sob rodas, os',
       width: 'w-12',
     },
   ];
@@ -62,18 +62,23 @@ export class VehicleGradeComponent implements OnInit {
   }
 
   search(query: string): void {
-    const searchResults = this.vehicleData.filter(
-      (car: any) =>
-        car.modelo.toLowerCase().includes(query) ||
-        car.marca.toLowerCase().includes(query)
-    );
-    this.router.navigateByUrl(`home/search/${query}`);
+    const searchResults = this.vehicleData.filter((car: any) => {
+      const carName: string = car.marca + car.modelo;
+      return carName.toLowerCase().includes(query.toLowerCase());
+    });
 
+    if (searchResults.length === 1) {
+      this.router.navigateByUrl(`home/details/${searchResults[0].id}`);
+    } else {
+      this.router.navigateByUrl(`home/search/${query}`);
+    }
   }
 
   onSearchKeyPress(event: KeyboardEvent): void {
     if (event.key === 'Enter') {
-      const query = (event.target as HTMLInputElement).value.trim().toLowerCase();
+      const query = (event.target as HTMLInputElement).value
+        .trim()
+        .toLowerCase();
       if (query) {
         this.search(query);
       } else {
