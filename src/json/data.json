@@ -1252,7 +1252,7 @@
     "ficha": "A Fiat Toro Endurance combina força e tecnologia, sendo a escolha perfeita para quem busca uma picape versátil e robusta."
   }, {
     "id": 116,
-    "foto": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/941e3bf1-b6de-4621-b19b-0693931cff1b/dfj9xv8-b06c7f52-473f-4ceb-bf42-33f15063e748.png/v1/fill/w_1280,h_720/lamborghini_miura_p400_sv_by_conklingc_dfj9xv8-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvOTQxZTNiZjEtYjZkZS00NjIxLWIxOWItMDY5MzkzMWNmZjFiXC9kZmo5eHY4LWIwNmM3ZjUyLTQ3M2YtNGNlYi1iZjQyLTMzZjE1MDYzZTc0OC5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.1BgNhrLTvXX9ufMe6rDAUItsyC1Q0YThTw1154ufAhA",
+    "foto": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/941e3bf1-b6de-4621-b19b-0693931cff1b/dfj9xv8-b06c7f52-473f-4ceb-bf42-33f15063e748.png/v1/fill/w_1280,h_720/lamborghini_miura_p400_sv_by_conklingc_dfj9xv8-fullview.png",
     "marca": "Miura",
     "modelo": "P400 SV",
     "ano": 1971,
@@ -1285,7 +1285,7 @@
   },
   {
     "id": 120,
-    "foto": "https://static.wikia.nocookie.net/overdrive_city/images/a/a8/Maserati_ghibli_ss_coupe.png/revision/latest/scale-to-width-down/512?cb=20200416170729",
+    "foto": "https://static.wikia.nocookie.net/overdrive_city/images/a/a8/Maserati_ghibli_ss_coupe.png",
     "marca": "Maserati",
     "modelo": "Ghibli",
     "ano": 1970,
@@ -1371,7 +1371,7 @@
   },
   {
     "id": 128,
-    "foto": "https://static.wikia.nocookie.net/forzamotorsport/images/8/8c/HOR_XB1_Bentley_8-Liter.png/revision/latest?cb=20190902200311",
+    "foto": "https://static.wikia.nocookie.net/forzamotorsport/images/8/8c/HOR_XB1_Bentley_8-Liter.png",
     "marca": "Bentley",
     "modelo": "8-Liter",
     "ano": 1931,
@@ -1382,7 +1382,7 @@
   },
   {
     "id": 129,
-    "foto": "https://static.wikia.nocookie.net/forzamotorsport/images/7/77/HOR_XB1_AM_DB5.png/revision/latest?cb=20191125205019",
+    "foto": "https://static.wikia.nocookie.net/forzamotorsport/images/7/77/HOR_XB1_AM_DB5.png",
     "marca": "Aston Martin",
     "modelo": "Aston Martin DB5",
     "ano": 1964,
