@@ -12,7 +12,7 @@
 
     <button
       class="text-white flex items-center"
-      (mouseover)="open()"
+      (click)="open()"
       [matMenuTriggerFor]="menu"
     >
     <span class="sm:flex hidden items-center">Navegue
@@ -26,13 +26,7 @@
           <span>Voltar ao principal</span>
         </button>
       </a>
-      <a href="/contact"
-        ><button mat-menu-item>
-          <mat-icon>phone</mat-icon>
-          <span>Contato</span>
-        </button>
-      </a>
-
+     
       <a href="/"
       ><button mat-menu-item>
         <mat-icon>logout</mat-icon>
