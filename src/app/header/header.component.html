@@ -1,5 +1,5 @@
 <header
-  class="z-50 2xl:py-4 py-2 shadow-md fixed w-full bg-black border-b border-white/30 flex items-center justify-center"
+  class="z-50 md:py-4 py-2 shadow-md fixed w-full bg-black border-b border-white/30 flex items-center justify-center"
 >
   <nav
     class="w-11/12 flex justify-between items-center"
@@ -11,12 +11,15 @@
     <img src="assets/img/FRANCAR.svg" alt="img" class="2xl:w-48 w-24" />
 
     <button
-      mat-icon-button
+      class="text-white flex items-center"
+      (mouseover)="open()"
       [matMenuTriggerFor]="menu"
     >
-      <mat-icon class="text-white">menu</mat-icon>
+    <span class="sm:flex hidden items-center">Navegue
+      <mat-icon class="text-white">keyboard_arrow_down</mat-icon></span>
+      <span class="sm:hidden block "><mat-icon >menu</mat-icon></span>
     </button>
-    <mat-menu #menu="matMenu">
+    <mat-menu  #menu="matMenu">
       <a href="/home"
         ><button mat-menu-item>
           <mat-icon>home</mat-icon>

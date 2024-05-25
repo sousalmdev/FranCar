@@ -28,7 +28,10 @@ import { LoadingScreenComponent } from './loading-screen/loading-screen.componen
 import { CarouselModule } from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';
 import { ClassicsComponent } from './classics/classics.component';
-
+import { ToastModule } from 'primeng/toast';
+import { MegaMenuModule } from 'primeng/megamenu';
+import { HttpClientModule } from '@angular/common/http';
+import {DialogModule} from 'primeng/dialog'
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,7 +61,10 @@ import { ClassicsComponent } from './classics/classics.component';
     MatListModule,
     CarouselModule,
     ButtonModule,
-    PanelMenuModule
+    PanelMenuModule,
+    ToastModule,
+    MegaMenuModule,HttpClientModule,
+    DialogModule
   ],
   providers: [],
   bootstrap: [AppComponent],
