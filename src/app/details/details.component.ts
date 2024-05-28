@@ -17,14 +17,14 @@ export class DetailsComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.params.subscribe((params) => {
-      const carId = +params['id'];
+      const carId = params['id'];  
       this.carService.getItemById(carId).subscribe((data) => {
         this.car = data;
       });
     });
   }
 
-  buyCar(id: number) {
+  buyCar(id: string) {
     this.router.navigateByUrl(`/buying/${id}`);
   }
 }
