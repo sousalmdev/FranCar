@@ -7,7 +7,7 @@ import { ApiService } from 'src/api/api.service';
   templateUrl: './details.component.html',
 })
 export class DetailsComponent implements OnInit {
-  car: any[] = [];
+  car: any;
 
   constructor(
     private route: ActivatedRoute,
