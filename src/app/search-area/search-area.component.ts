@@ -20,7 +20,7 @@ export class SearchAreaComponent implements OnInit {
   constructor(private apiService: ApiService, private route: ActivatedRoute, private router: Router) {}
 
   ngOnInit(): void {
-    this.apiService.getItems().subscribe(cars => {
+    this.apiService.getItems().subscribe((cars:any) => {
       this.allCars = cars;
       this.route.params.subscribe(params => {
         this.query = params['query'];
@@ -31,7 +31,7 @@ export class SearchAreaComponent implements OnInit {
 
   filterCars(): void {
     if (this.query) {
-      this.displayedCars = this.allCars.filter(car =>
+      this.displayedCars = this.allCars.filter((car:any) =>
         car.marca.toLowerCase().includes(this.query.toLowerCase()) ||
         car.modelo.toLowerCase().includes(this.query.toLowerCase())
       );
@@ -70,4 +70,3 @@ export class SearchAreaComponent implements OnInit {
   }
 }
 
-Me ajuda a fazer esse algoritmo com dados de api funcionarem
