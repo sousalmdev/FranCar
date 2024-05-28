@@ -12,7 +12,7 @@ import { MatIconButton } from '@angular/material/button';
   templateUrl: './search-area.component.html',
 })
 export class SearchAreaComponent implements OnInit {
-  allCars: any = (data as any);
+  allCars: any[] = [];
   displayedCars: any[] = [];
   query: string = '';
   sortCriteria: 'anoAsc' | 'anoDesc' | 'marcaAsc' = 'marcaAsc';
@@ -20,7 +20,7 @@ export class SearchAreaComponent implements OnInit {
   constructor(private apiService: ApiService, private route: ActivatedRoute, private router: Router) {}
 
   ngOnInit(): void {
-    this.apiService.getCars().subscribe(cars => {
+    this.apiService.getItems().subscribe(cars => {
       this.allCars = cars;
       this.route.params.subscribe(params => {
         this.query = params['query'];
