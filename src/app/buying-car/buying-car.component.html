@@ -1,10 +1,6 @@
 <body class="h-full text-white pt-20">
-  <main
-    class="flex items-center justify-start flex-col"
-  >
-    <section
-      class=" w-11/12 flex flex-col items-center justify-center"
-    >
+  <main class="flex items-center justify-start flex-col">
+    <section class="w-11/12 flex flex-col items-center justify-center">
       <div
         class="flex flex-col items-center px-3 py-10 xl:w-1/2 w-full bg-black text-white rounded-lg shadow-2xl"
       >
@@ -12,22 +8,23 @@
           Você está adquirindo:
           <br />
           <span class="font-black text-green-500 mt-2">
-            {{ car.marca.toUpperCase() }} {{ car.modelo.toUpperCase() }} {{ car.ano }}</span
+            {{ car.marca.toUpperCase() }} {{ car.modelo.toUpperCase() }}
+            {{ car.ano }}</span
           >
         </h2>
         <img src="{{ car.foto }}" alt="" class="my-4" />
         <div
-            class="2xl:text-2xl h-16 items-center  md:w-1/2 sm:w-11/12 w-11/12 flex text-xl shadow-md font-normal text-center my-10 bg-white rounded-md text-black"
+          class="2xl:text-2xl h-16 items-center md:w-1/2 sm:w-11/12 w-11/12 flex text-xl shadow-md font-normal text-center my-10 bg-white rounded-md text-black"
+        >
+          <span
+            class="bg-green-500 w-7 h-full text-green-500 relative left-0 rounded-e-3xl rounded-s-md"
+            >.</span
           >
-        <span
-          class="bg-green-500 w-7 h-full text-green-500 relative left-0 rounded-e-3xl rounded-s-md"
-          >.</span
-        >
-        <h2
-          class="2xl:text-4xl text-3xl font-black 2xl:ml-3  m-auto text-center"
-        >
-          {{ car.preco }},00
-        </h2>
+          <h2
+            class="2xl:text-4xl text-3xl font-black 2xl:ml-3 m-auto text-center"
+          >
+            {{ car.preco }},00
+          </h2>
         </div>
         <form
           (submit)="onSubmit($event)"
@@ -75,67 +72,80 @@
               type="text"
               id="carro"
               name="carro"
-              value="{{car.marca}} {{car.modelo}}"
+              value="{{ car.marca }} {{ car.modelo }}"
               class="border rounded-md text-green-500 bg-default font-black px-3 py-2"
             />
           </div>
           <div class="flex flex-col mb-4">
-            <label for="preco" class="2xl:text-lg text-sm mb-1"
-              >Valor:</label
-            >
+            <label for="preco" class="2xl:text-lg text-sm mb-1">Valor:</label>
             <input
               readonly
               type="text"
               id="preco"
               name="preco"
-              value="{{car.preco}}"
+              value="{{ car.preco }}"
               class="border rounded-md text-green-500 bg-default font-black px-3 py-2"
             />
           </div>
           <button
             type="submit"
-            class=" px-4 py-3 flex items-center justify-center gap-2 transition-all hover:scale-100 hover:shadow-2xl text-white bg-green-500 2xl:text-4xl text-xl font-black rounded-md shadow-md group"
+            class="px-4 py-3 flex items-center justify-center gap-2 transition-all hover:scale-100 hover:shadow-2xl text-white bg-green-500 2xl:text-4xl text-xl font-black rounded-md shadow-md group"
           >
             CONFIRMAR COMPRA
             <span
-              ><mat-icon class="text-white "
+              ><mat-icon class="text-white"
                 >shopping_cart_outlined</mat-icon
               ></span
             >
           </button>
         </form>
-        <p-dialog  [(visible)]="display" [closable]="false" [responsive]="true" [style]="{width: '300px'}">
-          <div class="bg-green-500 text-center shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col items-center justify-center">
-            <svg
-            class="w-20 self-center"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              stroke="none"
+        <p-dialog
+          [(visible)]="display"
+          [modal]="true"
+          [responsive]="true"
+          [style]="{ width: '400px' }"
+        >
+          <ng-template p-dialog="headless" pTemplate="content">
+            <div
+              class=" text-center text-green-500  flex flex-col items-center justify-center"
             >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g
-                id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke="#CCCCCC"
-                stroke-width="0.672"
-              ></g>
-              <g id="SVGRepo_iconCarrier">
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1ZM16.7682 10.1402C17.1218 9.7159 17.0645 9.08534 16.6402 8.73177C16.2159 8.37821 15.5853 8.43553 15.2318 8.85981L10.9328 14.0186L8.70711 11.7929C8.31658 11.4024 7.68342 11.4024 7.29289 11.7929C6.90237 12.1834 6.90237 12.8166 7.29289 13.2071L10.2929 16.2071C10.4916 16.4058 10.7646 16.5117 11.0453 16.499C11.326 16.4862 11.5884 16.356 11.7682 16.1402L16.7682 10.1402Z"
-                  fill="white"
-                ></path>
-              </g>
-            </svg>
-            <h1 class="text-2xl font-bold mb-2">Confirmação</h1>
-            <p>Formulário enviado com sucesso!</p>
-            <div class="flex justify-end">
-              <button pButton type="button" label="Ok" class="mt-4 bg-white transition-all hover:text-white hover:bg-black/20 text-green-500 font-bold py-2 px-4 rounded" (click)="closeDialog()"></button>
+              <svg
+                class="w-20 self-center"
+                viewBox="0 0 24 24"
+                fill="rgb(90 255 140)"
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="none"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke="rgb(90 255 140)"
+                  stroke-width="0.672"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1ZM16.7682 10.1402C17.1218 9.7159 17.0645 9.08534 16.6402 8.73177C16.2159 8.37821 15.5853 8.43553 15.2318 8.85981L10.9328 14.0186L8.70711 11.7929C8.31658 11.4024 7.68342 11.4024 7.29289 11.7929C6.90237 12.1834 6.90237 12.8166 7.29289 13.2071L10.2929 16.2071C10.4916 16.4058 10.7646 16.5117 11.0453 16.499C11.326 16.4862 11.5884 16.356 11.7682 16.1402L16.7682 10.1402Z"
+                    fill="rgb(18 255 128)"
+                  ></path>
+                </g>
+              </svg>
+              <h1 class="text-2xl font-bold mb-2">Confirmação</h1>
+              <p>Formulário enviado com sucesso!</p>
+              <div class="flex justify-end">
+                <button
+                  pButton
+                  type="button"
+                  label="Ok"
+                  class="mt-4 bg-white transition-all hover:text-white hover:bg-black/20 text-green-500 font-bold py-2 px-4 rounded"
+                  (click)="closeDialog()"
+                ></button>
+              </div>
             </div>
-          </div>
+          </ng-template>
         </p-dialog>
       </div>
     </section>

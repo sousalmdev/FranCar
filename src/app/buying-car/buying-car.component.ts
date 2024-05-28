@@ -1,27 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { BuyingCarService } from './buying-car.service';
-
+import { ApiService } from 'src/api/api.service';
 
 @Component({
   selector: 'app-buying-car',
   templateUrl: './buying-car.component.html',
 })
-export class BuyingCarComponent {
-
+export class BuyingCarComponent implements OnInit {
   car: any;
-  display:boolean = false;
+  display: boolean = false;
 
   constructor(
     private route: ActivatedRoute,
-    public buyService: BuyingCarService,
+    public buyService: ApiService,
     private router: Router
   ) {}
 
   ngOnInit(): void {
     this.route.params.subscribe((params) => {
       const carId = +params['id'];
-      this.car = this.buyService.getCarById(carId);
+      this.buyService.getItemById(carId).subscribe((car) => {
+        this.car = car;
+      });
     });
   }
 
@@ -36,7 +36,6 @@ export class BuyingCarComponent {
         this.closeDialog();
       }, 2000);
 
-
       setTimeout(() => {
         this.router.navigateByUrl('/thanks');
       }, 2000);
@@ -46,6 +45,4 @@ export class BuyingCarComponent {
   closeDialog(): void {
     this.display = false;
   }
-
-
 }

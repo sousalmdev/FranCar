@@ -31,7 +31,7 @@ import { ClassicsComponent } from './classics/classics.component';
 import { ToastModule } from 'primeng/toast';
 import { MegaMenuModule } from 'primeng/megamenu';
 import { HttpClientModule } from '@angular/common/http';
-import {DialogModule} from 'primeng/dialog'
+import { DialogModule } from 'primeng/dialog';
 @NgModule({
   declarations: [
     AppComponent,
@@ -63,8 +63,9 @@ import {DialogModule} from 'primeng/dialog'
     ButtonModule,
     PanelMenuModule,
     ToastModule,
-    MegaMenuModule,HttpClientModule,
-    DialogModule
+    MegaMenuModule,
+    HttpClientModule,
+    DialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

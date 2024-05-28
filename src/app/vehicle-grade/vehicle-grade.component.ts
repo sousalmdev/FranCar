@@ -1,14 +1,13 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import vehicleData from 'src/json/data.json';
+import { Component, OnInit } from '@angular/core';
+import { ApiService } from 'src/api/api.service';
 import { Router } from '@angular/router';
-import { MatSidenav } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-vehicle-grade',
   templateUrl: './vehicle-grade.component.html',
 })
 export class VehicleGradeComponent implements OnInit {
-  vehicleData: any[] = vehicleData;
+  vehicleData: any[] = [];
   displayedCars: any;
   totalCars: number = 0;
 
@@ -54,11 +53,15 @@ export class VehicleGradeComponent implements OnInit {
       width: 'w-12',
     },
   ];
-  constructor(private router: Router) {}
+
+  constructor(private vehicleService: ApiService, private router: Router) {}
 
   ngOnInit(): void {
-    this.totalCars = this.vehicleData.length;
-    this.displayedCars = this.vehicleData.slice(0, 10);
+    this.vehicleService.getItems().subscribe(data => {
+      this.vehicleData = data;
+      this.totalCars = this.vehicleData.length;
+      this.displayedCars = this.vehicleData.slice(0, 10);
+    });
   }
 
   search(query: string): void {
@@ -85,6 +88,7 @@ export class VehicleGradeComponent implements OnInit {
       }
     }
   }
+
   navToDetails(id: number): void {
     this.router.navigateByUrl(`home/details/${id}`);
   }
