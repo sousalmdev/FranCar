@@ -24,7 +24,7 @@ export class DetailsComponent implements OnInit {
     });
   }
 
-  buyCar(id: string) {
+  buyCar(id: number) {
     this.router.navigateByUrl(`/buying/${id}`);
   }
 }
