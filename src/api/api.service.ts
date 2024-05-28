@@ -19,9 +19,9 @@ export class ApiService {
     );
   }
 
-  getItemById(_id: string): Observable<any> {  
+  getItemById(id: string): Observable<any> { 
     this.loadingService.show();
-    return this.http.get<any>(`${this.apiUrl}/item/${_id}`).pipe(
+    return this.http.get<any>(`${this.apiUrl}/item/${id}`).pipe(
       finalize(() => this.loadingService.hide())
     );
   }
