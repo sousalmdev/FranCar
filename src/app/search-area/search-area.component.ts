@@ -12,7 +12,7 @@ import { MatIconButton } from '@angular/material/button';
   templateUrl: './search-area.component.html',
 })
 export class SearchAreaComponent implements OnInit {
-  allCars: any[] = (data as any)
+  allCars: any = (data as any);
   displayedCars: any[] = [];
   query: string = '';
   sortCriteria: 'anoAsc' | 'anoDesc' | 'marcaAsc' = 'marcaAsc';
