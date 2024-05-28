@@ -17,7 +17,7 @@ export class SearchAreaComponent implements OnInit {
   query: string = '';
   sortCriteria: 'anoAsc' | 'anoDesc' | 'marcaAsc' = 'marcaAsc';
 
-  constructor(private route: ActivatedRoute, private router: Router) {}
+  constructor(private apiService: ApiService, private route: ActivatedRoute, private router: Router) {}
 
   ngOnInit(): void {
     this.apiService.getCars().subscribe(cars => {
