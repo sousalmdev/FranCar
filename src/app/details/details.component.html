@@ -3,7 +3,7 @@
     class=" px-5 min-h-screen flex items-center  flex-col"
   >
     <section
-      class="2xl:w-5/12 w-full  2xl:border 2xl:shadow rounded flex flex-col items-center justify-center"
+      class="2xl:w-5/12 w-full  rounded flex flex-col items-center justify-center"
     >
       <div class="flex flex-col items-center py-10 bg-black text-white">
         <div class="flex flex-col items-center text-white justify-center p-5">
@@ -63,7 +63,7 @@
           </div>
         </div>
         <button
-          (click)="buyCar(car?.id)"
+          (click)="buyCar(car?._id)"
           type="button"
           class="2xl:w-1/2 w-10/12 px-4 py-3 flex items-center justify-center gap-2 transition-all hover:scale-100 hover:shadow-2xl text-white bg-green-500 2xl:text-4xl text-3xl font-black rounded-md shadow-md group"
         >

@@ -18,7 +18,7 @@ export class BuyingCarComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.params.subscribe((params) => {
-      const carId = +params['id'];
+      const carId = params['id'];
       this.buyService.getItemById(carId).subscribe((car) => {
         this.car = car;
       });

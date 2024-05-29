@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   templateUrl: './vehicle-grade.component.html',
 })
 export class VehicleGradeComponent implements OnInit {
-  vehicleData: any[] = [];
+  vehicleData: any;
   displayedCars: any;
   totalCars: number = 0;
 
@@ -64,14 +64,18 @@ export class VehicleGradeComponent implements OnInit {
     });
   }
 
+
   search(query: string): void {
     const searchResults = this.vehicleData.filter((car: any) => {
-      const carName: string = car.marca + car.modelo;
-      return carName.toLowerCase().includes(query.toLowerCase());
+      if (car && typeof car.marca === 'string' && typeof car.modelo === 'string') {
+        const carName: string = car.marca + car.modelo;
+        return carName.toLowerCase().includes(query.toLowerCase());
+      }
+      return false; 
     });
 
     if (searchResults.length === 1) {
-      this.router.navigateByUrl(`home/details/${searchResults[0].id}`);
+      this.router.navigateByUrl(`home/details/${searchResults[0]._id}`);
     } else {
       this.router.navigateByUrl(`home/search/${query}`);
     }
@@ -89,8 +93,8 @@ export class VehicleGradeComponent implements OnInit {
     }
   }
 
-  navToDetails(id: number): void {
-    this.router.navigateByUrl(`home/details/${id}`);
+  navToDetails(_id: string): void {
+    this.router.navigateByUrl(`home/details/${_id}`);
   }
 
   onPageChange(event: any): void {

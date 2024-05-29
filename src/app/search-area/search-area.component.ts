@@ -3,16 +3,14 @@ import { ActivatedRoute, Router } from '@angular/router';
 import {MatSelectChange, MatSelectModule, MatSelectTrigger} from '@angular/material/select';
 
 import {ApiService} from 'src/api/api.service';
-import { MatMenu } from '@angular/material/menu';
-import { MatIcon } from '@angular/material/icon';
-import { MatIconButton } from '@angular/material/button';
+
 
 @Component({
   selector: 'app-search-area',
   templateUrl: './search-area.component.html',
 })
 export class SearchAreaComponent implements OnInit {
-  allCars: any[] = [];
+  allCars: any;
   displayedCars: any[] = [];
   query: string = '';
   sortCriteria: 'anoAsc' | 'anoDesc' | 'marcaAsc' = 'marcaAsc';
@@ -20,7 +18,7 @@ export class SearchAreaComponent implements OnInit {
   constructor(private apiService: ApiService, private route: ActivatedRoute, private router: Router) {}
 
   ngOnInit(): void {
-    this.apiService.getItems().subscribe((cars:any) => {
+    this.apiService.getItems().subscribe(cars => {
       this.allCars = cars;
       this.route.params.subscribe(params => {
         this.query = params['query'];
@@ -28,20 +26,21 @@ export class SearchAreaComponent implements OnInit {
       });
     });
   }
-
   filterCars(): void {
     if (this.query) {
-      this.displayedCars = this.allCars.filter((car:any) =>
-        car.marca.toLowerCase().includes(this.query.toLowerCase()) ||
-        car.modelo.toLowerCase().includes(this.query.toLowerCase())
-      );
+      this.displayedCars = this.allCars.filter((car: any) => {
+     
+        const carName: string = (car.marca || '') + (car.modelo || '');
+
+
+        return typeof carName === 'string' && carName.toLowerCase().includes(this.query.toLowerCase());
+      });
     } else {
       this.displayedCars = [...this.allCars];
     }
 
     this.sortCars();
   }
-
   sortCars(): void {
     this.displayedCars.sort((a, b) => {
       if (this.sortCriteria === 'anoDesc') {
@@ -65,8 +64,8 @@ export class SearchAreaComponent implements OnInit {
     }
   }
 
-  navToDetails(id: number): void {
-    this.router.navigateByUrl(`home/details/${id}`);
+  navToDetails(_id: string): void {
+    this.router.navigateByUrl(`home/details/${_id}`);
   }
 }
 
