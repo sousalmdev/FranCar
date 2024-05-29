@@ -9,18 +9,18 @@
         <div class="flex flex-col items-center text-white justify-center p-5">
           <div class="flex flex-col mb-6">
             <h2 class="text-center sm:text-6xl text-3xl font-semibold">
-              {{ car.marca.toUpperCase() }}
+              {{ car?.marca.toUpperCase() }}
               <span class="font-black text-green-500">{{
-                car.modelo.toUpperCase()
+                car?.modelo.toUpperCase()
               }}</span>
             </h2>
           </div>
-          <img src="{{ car.foto }}" alt="" class="" />
+          <img src="{{ car?.foto }}" alt="" class="" />
 
           <p
             class="md:text-3xl sm:text-xl text-base text-white font-light sm:text-left text-center 2xl:w-11/12 sm:w-3/4 w-11/12 my-4"
           >
-            {{ car.ficha }}
+            {{ car?.ficha }}
           </p>
           <div
             class="w-full flex text-center items-center 2xl:justify-center xl:justify-center md:justify-center sm:justify-evenly md:gap-6 justify-between"
@@ -31,7 +31,7 @@
               <div class="flex flex-col items-center text-white justify-center">
                 <h3>Lançamento:</h3>
                 <h3 class="font-black text-green-500">
-                  {{ car.ano }}
+                  {{ car?.ano }}
                 </h3>
               </div>
             </div>
@@ -43,7 +43,7 @@
                   Motor:
                   <br />
                   <span class="w-full font-black text-green-500">
-                    {{ car.motor }}
+                    {{ car?.motor }}
                   </span>
                 </h3>
               </div>
@@ -58,12 +58,12 @@
             >
             <h2 class="m-auto text-center px-1 self-center">
               <span class="font-black 2xl:ml-2">VALOR: </span>
-              <span class="font-black">{{ car.preco }},00</span>
+              <span class="font-black">{{ car?.preco }},00</span>
             </h2>
           </div>
         </div>
         <button
-          (click)="buyCar(car.id)"
+          (click)="buyCar(car?.id)"
           type="button"
           class="2xl:w-1/2 w-10/12 px-4 py-3 flex items-center justify-center gap-2 transition-all hover:scale-100 hover:shadow-2xl text-white bg-green-500 2xl:text-4xl text-3xl font-black rounded-md shadow-md group"
         >
