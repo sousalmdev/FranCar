@@ -15,9 +15,9 @@ export class DetailsComponent implements OnInit {
     private router: Router
   ) {}
 
-  ngOnInit(): void {
+    ngOnInit(): void {
     this.route.params.subscribe((params) => {
-      const carId = params['id'];  
+      const carId = +params['id'];  
       this.carService.getItemById(carId).subscribe((data) => {
         this.car = data;
       });
