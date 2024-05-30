@@ -17,7 +17,7 @@ export class ClassicsComponent implements OnInit {
     });
   }
 
-  navToDetails(id: number): void {
-    this.router.navigateByUrl(`home/details/${id}`);
+  navToDetails(_id: string): void {
+    this.router.navigateByUrl(`home/details/${_id}`);
   }
 }
