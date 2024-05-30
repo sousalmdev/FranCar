@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ApiService } from 'src/api/api.service';
+import emailjs from '@emailjs/browser';
 
 @Component({
   selector: 'app-buying-car',
@@ -9,6 +10,9 @@ import { ApiService } from 'src/api/api.service';
 export class BuyingCarComponent implements OnInit {
   car: any;
   display: boolean = false;
+  private serviceID = 'service_3z9n8bj';
+  private templateID = 'template_prubzbz';
+  private userID = 'EK_zMWJ1dJIw0fHEh';
 
   constructor(
     private route: ActivatedRoute,
@@ -26,19 +30,36 @@ export class BuyingCarComponent implements OnInit {
   }
 
   onSubmit(event: Event): void {
+    event.preventDefault();
     const form = (document.getElementById('form') as HTMLFormElement) || null;
     if (form) {
-      this.display = true;
-      event.preventDefault();
-      form.reset();
+      const formData = new FormData(form);
+      const nome = formData.get('nome') as string;
+      const endereco = formData.get('endereco') as string;
+      const email = formData.get('email') as string;
+      const carro = formData.get('carro') as string;
+      const preco = formData.get('preco') as string;
 
-      setTimeout(() => {
-        this.closeDialog();
-      }, 2000);
+      const templateParams = {
+        to_name: nome,
+        car_bought: carro,
+        price: preco,
+        address: endereco,
+        to_email: email
+      };
 
-      setTimeout(() => {
-        this.router.navigateByUrl('/thanks');
-      }, 2000);
+      emailjs.send(this.serviceID, this.templateID, templateParams, this.userID)
+        .then(() => {
+          this.display = true;
+          form.reset();
+
+          setTimeout(() => {
+            this.closeDialog();
+            this.router.navigateByUrl('/thanks');
+          }, 2000);
+        }).catch((error) => {
+          console.error('Failed to send email', error);
+        });
     }
   }
 
