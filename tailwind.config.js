@@ -10,7 +10,9 @@ module.exports = {
         },
       },
       animation: {
-        'fade-up': 'fade-up 1s ease-out',
+        'fade-up': 'fade-up 1s ease',
+        'fade-up2': 'fade-up 1.5s ease ',
+        'fade-up3': 'fade-up 1.9s ease ',
       },
     colors: {
         "default":"#171717",
@@ -20,7 +22,8 @@ module.exports = {
       'chevy':'url(https://www.autoinfluence.com/wp-content/uploads/2023/08/used-Chevy-dealer-2019-Chevy-Blazer-Red.jpg)',
       'volks':'url(https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/1-volkswagen-golf-r-2021-rt-hero-front.jpg?itok=5CiSsPbp)',
       'fiat':'url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfoyn6ge86p3SsuOLAvGIk64U98oC1QMJmaGOBuc8D9tRadU8Zm8sDkbImAyAx8AgGNlPq97amdL3Ff6GVzCTEOyxGYCr1kpVWGDIEdu9N2szsCnVyEvIDwFRi1ZKId6wM0FbUg5lvZdKJ_KM08dtskrQCULqvZE4mjiIZalewmc31-YcZUavQiNqweLOG/s800/Fiat-Argo.jpg)',
-      'classics':'url(https://www.motoroids.com/wp-content/uploads/2022/03/Classic-Cars-2.jpg)'
+      'classics':'url(https://www.motoroids.com/wp-content/uploads/2022/03/Classic-Cars-2.jpg)',
+      'logo':'url(assets/img/Component 56.png)'
     }
   },
   plugins: [],

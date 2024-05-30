@@ -1,37 +1,77 @@
-<div class="p-5 flex flex-col items-center w-full bg-black gap-10 justify-center h-full">
+<div
+  class="px-5 pt-20 flex flex-col items-center w-full bg-black gap-10 justify-center h-full"
+>
   <svg
-  class="2xl:w-60 w-40"
+    class="md:w-36 w-20 animate-fade-up3"
     viewBox="0 0 24 24"
-    fill="none"
+    fill="white"
     xmlns="http://www.w3.org/2000/svg"
     stroke="none"
   >
-    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_bgCarrier" fill="white" stroke-width="0"></g>
     <g
       id="SVGRepo_tracerCarrier"
       stroke-linecap="round"
       stroke-linejoin="round"
       stroke="#CCCCCC"
       stroke-width="0.672"
+      fill="white"
     ></g>
     <g id="SVGRepo_iconCarrier">
       <path
         fill-rule="evenodd"
         clip-rule="evenodd"
         d="M12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1ZM16.7682 10.1402C17.1218 9.7159 17.0645 9.08534 16.6402 8.73177C16.2159 8.37821 15.5853 8.43553 15.2318 8.85981L10.9328 14.0186L8.70711 11.7929C8.31658 11.4024 7.68342 11.4024 7.29289 11.7929C6.90237 12.1834 6.90237 12.8166 7.29289 13.2071L10.2929 16.2071C10.4916 16.4058 10.7646 16.5117 11.0453 16.499C11.326 16.4862 11.5884 16.356 11.7682 16.1402L16.7682 10.1402Z"
-        fill="rgb(18 255 128)"
+        fill="rgba(18, 255, 128,70%)"
       ></path>
     </g>
   </svg>
-
-  <p class="text-lg font-bold mt-4 2xl:text-6xl text-3xl text-center text-white px-2">
-    Obrigado por comprar com a <span class="bg-green-500 text-white font-black">FranCar!</span>
+  <div class="border-b pb-5 animate-fade-up border-green-500">
+    <p
+      class="animate-fade-up2 font-bold mt-4 2xl:text-4xl text-xl text-center text-white"
+    >
+      Obrigado por comprar com a
+      <span class="text-green-500 font-black">FranCar!</span>
+    </p>
+    <br />
+    <p
+      class="animate-fade-up3 font-bold mt-4 2xl:text-4xl text-xl text-center text-white"
+    >
+      Este é um projeto feito por
+      <span class="text-green-500 font-black">Leandro Sousa.</span>
+    </p>
+  </div>
+  <p
+    class="animate-fade-up2 font-bold mt-4 2xl:text-4xl text-xl text-center text-white"
+  >
+    <span class="text-green-500 font-black">Fala Comigo:</span>
   </p>
+  <ul class="gap-5 md:w-5/12 w-full text-left">
+    <li>
+      <p
+        class="animate-fade-up2 font-bold mt-4 2xl:text-4xl text-xl text-white"
+      >
+        LinkedIn:
+        <span class="text-green-500 font-black"><a class="transition-all hover:bg-white hover:px-2 rounded-full" href="http://linkedin.com/in/leosousadev">@leosousadev</a></span>
+      </p>
+    </li>
+    <li>  <p
+      class="animate-fade-up2 font-bold mt-4 2xl:text-4xl text-xl  text-white"
+    >
+      Github:
+      <span class="text-green-500 font-black"><a class="transition-all hover:bg-white hover:px-2 rounded-full" href="http://github.com/sousalmdev">@sousalmdev</a></span>
+    </p></li>
+    <li> <p
+      class="flex items-center animate-fade-up2 gap-2 font-bold mt-4 2xl:text-4xl text-xl text-white"
+    >
+      Email: <span class="text-green-500 font-black"><a class="flex items-center transition-all hover:bg-white gap-2 hover:px-2 rounded-full" href="mailto:leandromedeiros690@gmail.com"> @leandromedeiros <mat-icon>mail</mat-icon></a></span>
+    </p></li>
+  </ul>
   <button
-  (click)="goHome()"
-  class="text-white mt-10 flex shadow-md hover:bg-white hover:text-green-500 flex self-center bg-green-500 p-4 font-black rounded-md xl:text-2xl text-xl transition-all"
-  type="button"
->
-  Voltar ao Início
-</button>
+    (click)="goHome()"
+    class="text-white flex animate-fade-up3 text-center items-center justify-center gap-2 mt-10 flex shadow-md hover:bg-white hover:text-green-500  bg-green-500 p-4 font-black rounded-full md:text-3xl text-xl transition-all md:w-1/4 sm:w-2/4 w-11/12"
+    type="button"
+  >
+    <mat-icon> home </mat-icon> Voltar ao Início
+  </button>
 </div>
