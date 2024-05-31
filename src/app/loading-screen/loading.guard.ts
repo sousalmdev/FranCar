@@ -26,7 +26,7 @@ export class LoadingGuard implements CanActivate {
     if (this.cacheService.has(this.cacheKey)) {
       return of(true);
     }
-    setTimeout(()=>  this.loadingService.show(),3000)
+  this.loadingService.show();
 
     return this.apiService.getItems().pipe(
       tap(items => this.cacheService.set(this.cacheKey, items)),
