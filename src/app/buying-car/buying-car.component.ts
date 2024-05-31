@@ -45,7 +45,8 @@ export class BuyingCarComponent implements OnInit {
         car_bought: carro,
         price: preco,
         address: endereco,
-        to_email: email
+        to_email: email,
+        car_image_url:this.car.foto
       };
 
       emailjs.send(this.serviceID, this.templateID, templateParams, this.userID)
