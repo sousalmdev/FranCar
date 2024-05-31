@@ -6,7 +6,7 @@ import { LoadingService } from './loading.service';
   templateUrl: './loading-screen.component.html'
 })
 export class LoadingScreenComponent {
-  loading$ = this.loadingService.loading$;
+  loading$ = this.loadingService.isLoading;
 
   constructor(private loadingService: LoadingService) {}
 }

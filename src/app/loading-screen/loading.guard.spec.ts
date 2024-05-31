@@ -25,7 +25,7 @@ describe('LoadingGuard', () => {
     loadingService.show();
     guard.canActivate(null as any,null as any).subscribe(result => {
       expect(result).toBeTrue();
-      expect(loadingService.loading$).toBeTruthy();
+      expect(loadingService.isLoading).toBeTruthy();
       done();
     });
   });
