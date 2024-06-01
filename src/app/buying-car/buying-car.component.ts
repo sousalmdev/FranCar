@@ -39,6 +39,7 @@ export class BuyingCarComponent implements OnInit {
       const email = formData.get('email') as string;
       const carro = formData.get('carro') as string;
       const preco = formData.get('preco') as string;
+      const foto = this.car.foto as string;
 
       const templateParams = {
         to_name: nome,
@@ -46,7 +47,7 @@ export class BuyingCarComponent implements OnInit {
         price: preco,
         address: endereco,
         to_email: email,
-        car_image_url:this.car.foto
+        car_image_url:foto
       };
 
       emailjs.send(this.serviceID, this.templateID, templateParams, this.userID)
